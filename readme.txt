@@ -19,7 +19,7 @@ For more information search on http://elchepunebrek.ru/novyj-plagin-grabber-dlya
 
 == Changelog ==
 = 3.0.1 =
-fixed problem with patch
+* fixed problem with patch
 
 = 3.0 =
 * Initial release
