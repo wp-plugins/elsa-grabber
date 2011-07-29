@@ -2,7 +2,7 @@
 Contributors: Elchesav
 Tags: grabber, russian, Elche_grabber, RSS, RSS grabber
 Requires at least: 3.0
-Tested up to: 3.0
+Tested up to: 3.2.1
 Stable tag: 3.1
 
 For more information search on http://elchepunebrek.ru/novyj-plagin-grabber-dlya-wp.html
@@ -18,6 +18,8 @@ For more information search on http://elchepunebrek.ru/novyj-plagin-grabber-dlya
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 
 == Changelog ==
+= 3.0.1 =
+fixed problem with patch
 
 = 3.0 =
 * Initial release
