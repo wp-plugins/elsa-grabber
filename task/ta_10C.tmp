@@ -13,6 +13,7 @@ DO
 %post%=_clearHtml(%post%);
 %post_cotent%=_extHtml(%post%,.//*[@id='pageContent']/div[1]/div[1]/div[2]/div[3]);
 %post_img%=_extHtml(%post%,.//*[@id='pageContent']/div[1]/div[1]/div[2]/div[3]/img,,src);
+%post_img%=_loadFtp(%post_img%);
 %post_image%=_makeTag(img);
 %post_image%=_setAttr(%post_image%,alt='alt text for image',title='title text for image',vspace='5',hspace='10',class='imageclass',src='%post_img%');
 %post_cotent%=_join(%post_image%,%post_cotent%);

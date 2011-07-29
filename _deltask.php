@@ -1,16 +1,10 @@
 <html><head><title></title></head><body>
    <?php
-   $dir=$_REQUEST['elsadir'];
-   if ($dir[strlen($dir)-1]=='/'){$dir=substr($dir,0,strlen($dir)-1);}
-
-   DEFINE ('WP_PLUGIN_DIR',$dir);
    require_once('core/loader.php');
 
    $del=$_REQUEST['deltask'];
 
-   //print $del.'<br>';
-   //print $_REQUEST['elsadir'];
-   $t=new task($dir.'/elsa/task');
+    $t=new task(get_option('elsa_pluginpatch',false).'/task');
     $task=$t->getTask('filename='.$del);
 
     $t_name=$task['name'];

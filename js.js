@@ -16,21 +16,3 @@ $(document).ready(function() {
 return false;
     });
 });
-function getParamTask(a,a1)
-  {
-    var ret='';
-    var alldata = 'filename='+a+'&need='+a1;
-    alldata+='&getparam=true'
-       ret=$.ajax({
-       url: "../wp-content/plugins/elsa/_globaltask.php",
-       cache: false,
-       error:function (b,b1,b2){alert(b2);},
-       async: false,
-       data: alldata,
-       success: function(html){
-         return html;
-
-         }
-          }).responseText;
-  return ret;
-  }

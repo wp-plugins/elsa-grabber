@@ -392,13 +392,13 @@
 
         if(file_exists($elsa_absimgpatch.$tmpimg_name)) {return $elsa_imgurl.$tmpimg_name;}
 
-       if (copy ($link,$elsa_absimgpatch.$tmpimg_name))
+       if ((copy ($link,$elsa_absimgpatch.$tmpimg_name)))
         {
         return trim($elsa_imgurl.$tmpimg_name);
         }
        else
         {
-        return $elsa_site.'/wp-content/plugins/elsa/images/uncopy.gif';
+        return plugin_dir_url(get_option('elsa_pluginpatch',false).'/images/h').'uncopy.gif';
         }
        }
      function _addMore($a)

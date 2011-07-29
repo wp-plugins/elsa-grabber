@@ -23,9 +23,10 @@ function elsa_selfmenu()
   <div class="tab_container">
     <div id="tab1" class="tab_content">
         <?php
-        $UP=WP_PLUGIN_DIR.'/elsa/';
+        $UP=get_option('elsa_pluginpatch',false).'/';
         $task=new task($UP.'task/');
-        $up2=plugin_dir_url( dirname(__FILE__));
+        $up2=plugin_dir_url(__FILE__);
+        //echo  "<h1>$up2</h1>";
         $up3=WP_PLUGIN_DIR;
         $mess='';
         
@@ -86,20 +87,20 @@ function elsa_selfmenu()
               {
               $out='';
               $out.='<div id="elsatask">'.$t['name'].' — запуск: '.$t['time'].'; файл: ['.$t['filename'].']';
-              $out.='<a href="'.$up2.'elsa/_deltask.php?KeepThis=true&modal=true&elsadir='.$up3.'&deltask='.$t['filename'].'" class="thickbox"><img src="'.$up2.'elsa/images/delete.png"></a>';
-              $out.='<a href="javascript:void(0)" onclick="editTask(\''.$t['filename'].'\')"><img src="'.$up2.'elsa/images/edit.png"></a>';
+              $out.='<a href="'.$up2.'_deltask.php?KeepThis=true&modal=true&deltask='.$t['filename'].'" class="thickbox"><img src="'.$up2.'images/delete.png"></a>';
+              $out.='<a href="javascript:void(0)" onclick="editTask(\''.$t['filename'].'\')"><img src="'.$up2.'images/edit.png"></a>';
 
               if ($play[$t['filename']]==true)
                 {
-                 $out.='<a href="?stoptask='.$t['filename'].'&page='.$_REQUEST['page'].'"><img src="'.$up2.'elsa/images/stop.png"></a>';
-                 $out.='<img src="'.$up2.'elsa/images/grey.png">';
+                 $out.='<a href="?stoptask='.$t['filename'].'&page='.$_REQUEST['page'].'"><img src="'.$up2.'images/stop.png"></a>';
+                 $out.='<img src="'.$up2.'images/grey.png">';
                 }
               else
                 {
-                 $out.='<img src="'.$up2.'elsa/images/grey.png">';
-                 $out.='<a href="?playtask='.$t['filename'].'&page='.$_REQUEST['page'].'"><img src="'.$up2.'elsa/images/play.png"></a>';
+                 $out.='<img src="'.$up2.'images/grey.png">';
+                 $out.='<a href="?playtask='.$t['filename'].'&page='.$_REQUEST['page'].'"><img src="'.$up2.'images/play.png"></a>';
                 }
-              $out.='<a href="'.$up2.'elsa/_viewtask.php?KeepThis=true&modal=true&elsadir='.$up3.'&viewtask='.$t['filename'].'&width=700" class="thickbox"><img src="'.$up2.'elsa/images/view.png"></a>';
+              $out.='<a href="'.$up2.'_viewtask.php?KeepThis=true&modal=true&elsadir='.$up3.'&viewtask='.$t['filename'].'&width=700" class="thickbox"><img src="'.$up2.'images/view.png"></a>';
 
               $out.='</div>';
               echo $out;
@@ -147,7 +148,7 @@ function elsa_selfmenu()
  </div>
 <h2>&nbsp;</h2>
 <h3>Информация</h3>
-<img src="<?=$up2;?>elsa/images/elsalogo.png"><br> <br>
+<img src="<?=$up2;?>images/elsalogo.png"><br> <br>
 <div id="elsa_right">
 
 <?php
@@ -180,6 +181,7 @@ border_color="" stream="false" header="true">
   </div>
 
     <script language=javascript>
+
     function editTask(a)
       {
       var tname=getParamTask(a,'name');  document.edit_add.tname.value=tname;
@@ -191,6 +193,26 @@ border_color="" stream="false" header="true">
       $("ul.tabs li").click();
       
       }
+      
+    function getParamTask(a,a1)
+     {
+    var ret='';
+    var urlf="<?=plugin_dir_url(__FILE__);?>_globaltask.php";
+    var alldata = 'filename='+a+'&need='+a1;
+    alldata+='&getparam=true'
+       ret=$.ajax({
+       url: urlf,
+       cache: false,
+       error:function (b,b1,b2){alert(b2);},
+       async: false,
+       data: alldata,
+       success: function(html){
+         return html;
+
+         }
+          }).responseText;
+    return ret;
+     }
     </script>
     
   <?php
@@ -208,7 +230,7 @@ function elsa_add_menu() {
 		wp_enqueue_script('thickbox', 'http://www.savitov.ru/shared/thickbox.js');
 		wp_enqueue_script('elsa_js_file', "{$d}js.js");
     add_action('admin_head', 'elsaAddCss', 999);
-    require(WP_PLUGIN_DIR."/elsa/core/loader.php");
+    require(get_option('elsa_pluginpatch',false)."/core/loader.php");
 }
 function elsa_deactive()
   {
@@ -216,6 +238,7 @@ function elsa_deactive()
   delete_option(elsa_absimgpatch);
   delete_option(elsa_imgurl);
   delete_option(elsa_links);
+  delete_option(elsa_pluginpatch);
   }
 function elsa_get_footer()
   {
@@ -235,9 +258,10 @@ function elsa_get_footer()
 function  elsa_active()
   {
   add_option( 'elsa_playtask', '', '', 'yes' );
-  add_option( 'elsa_absimgpatch', $_SERVER['DOCUMENT_ROOT'].'/wp-content/elsa/', '', 'yes' );
-  add_option( 'elsa_imgurl', get_option('siteurl',false).'/wp-content/elsa/', '', 'yes' );
+  add_option( 'elsa_absimgpatch', $_SERVER['DOCUMENT_ROOT'].'/wp-content/elsa-grabber/', '', 'yes' );
+  add_option( 'elsa_imgurl', get_option('siteurl',false).'/wp-content/elsa-grabber/', '', 'yes' );
   add_option('elsa_links','','','yes');
+  add_option('elsa_pluginpatch',dirname(__FILE__),'',yes);
   }
 add_action('admin_menu', 'elsa_add_menu');
 register_activation_hook( __FILE__, 'elsa_active' );
