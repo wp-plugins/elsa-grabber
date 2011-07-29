@@ -1,0 +1,101 @@
+/*
+Plugin Name: ElSa_grabber
+Plugin URI: http://Elchepunebrek.ru
+Description: Р“СЂР°Р±Р±РµСЂ RSS ktyn
+Version: 3.0
+Author: Elchepunebrek, Savitov
+Author URI: http://Elchepunebrek.ru
+*/
+#elsa
+  {
+  font-size:30px;
+  }
+  
+ul.tabs {
+ margin: 0 0 0 0;
+ padding: 0;
+ float: left;
+ list-style: none;
+ height: 32px; /*--Высота вкладок--*/
+ border-bottom: 1px solid #999;
+ border-left: 1px solid #999;
+ width:98%;
+}
+ul.tabs li {
+ float: left;
+ margin: 0;
+ padding: 0;
+ height: 31px; /*--Вычтем 1px из высоты элементов списка--*/
+ line-height: 31px; /*--Выровняем текст во вкладках с помощью междустрочного интервала--*/
+ border: 1px solid #999;
+ border-left: none;
+ margin-bottom: -1px; /*--Прижмем элемент списка к низу на 1px--*/
+ overflow: hidden;
+ position: relative;
+ background: #e0e0e0;
+-webkit-border-top-left-radius: 4px;
+-webkit-border-top-right-radius: 4px;
+-moz-border-radius: 4px 4px 0px 0px;
+margin-right:3px;
+}
+ul.tabs li a {
+ text-decoration: none;
+ color: #000;
+ display: block;
+ font-size: 1.2em;
+ padding: 0 20px;
+ border: 1px solid #fff; /*--Придадим нашим вкладкам внутреннего свечения по краям--*/
+ outline: none;
+-webkit-border-top-left-radius: 4px;
+-webkit-border-top-right-radius: 4px;
+-moz-border-radius: 4px 4px 0px 0px;
+}
+ul.tabs li a:hover {
+ background: #ccc;
+}
+html ul.tabs li.active, html ul.tabs li.active a:hover  { /*--Зададим активной вкладке соответствующий цвет--*/
+ background: #cccccc;
+ border-bottom: 1px solid #fff; /*--Зададим границе вкладки такой же цвет, как и сама вкладка для того, чтобы создать видимость отношения выбранной вкладки к текущему контенту--*/
+}
+.tab_container {
+ margin: 0 0 0 0;
+ border: 1px solid #999;
+ border-top: none;
+ overflow: hidden;
+ clear: both;
+ float: left; width: 100%;
+ background: #F9F9F9;
+ width:98%;
+}
+.tab_content {
+ padding: 20px;
+ font-size: 1.2em;
+}
+.tab_container {
+margin: 0 0 0 0;
+border: 1px solid #999;
+border-top: none;
+overflow: hidden;
+clear: both;
+float: left; width: 100%;
+background: #F9F9F9;
+width:98%;
+}
+.tab_content {
+padding: 20px;
+font-size: 1.2em;
+}
+#elsa_left{width:50%; min-height:500px;float:left;}
+#elsa_right{width:50%; min-height:500px;float:right; overflow: auto;}
+#elsatask {width:100%; height:16px; line-height:16px; margin-bottom:5px; padding:3px 0 3px 10px;}
+#elsatask:hover {background-color:#555555;}
+#elsatask img {float:right; margin-right:10px;}
+.inp{width:100%;}
+.inp2{width:80%;}
+.textinp{width:100%; min-height:150px;}
+#elsa_testtask
+  {
+  width:90%;
+  padding:5%;
+  background-color:#F8D3D3;
+  }
