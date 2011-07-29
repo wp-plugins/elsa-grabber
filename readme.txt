@@ -5,7 +5,7 @@ Requires at least: 3.0
 Tested up to: 3.0
 Stable tag: 3.1
 
-rss grabber
+For more information search on http://elchepunebrek.ru/novyj-plagin-grabber-dlya-wp.html
 
 == Description ==
 
