@@ -3,7 +3,7 @@
 Plugin Name: ElSa_grabber
 Plugin URI: http://elchepunebrek.ru/novyj-plagin-grabber-dlya-wp.html
 Description: Граббер RSS лент
-Version: 3.0.1
+Version: 3.1
 Author: Elchepunebrek, Savitov
 Author URI: http://Elchepunebrek.ru, http://Savitov.ru
 */
