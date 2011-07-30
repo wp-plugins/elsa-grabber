@@ -10,15 +10,19 @@ Author URI: http://Elchepunebrek.ru, http://Savitov.ru
 
 function elsa_selfmenu()
   {
+   $elsamo=WP_PLUGIN_DIR.'/'.dirname( plugin_basename( __FILE__ ) ) . '/language/'.get_locale().'.mo';
+   load_textdomain('elsagrabber',$elsamo);
+   //echo $elsamo;
   ?>
   <div class="wrap">
   <div id="elsa_left">
-     <h2>Панель администратора ElSa Grabber</h2>
+  
+     <h2><?php _e('The panel of manager ElSa Grabber','elsagrabber');?> </h2>
 
-    <h3>Список заданий</h3>
+    <h3><?php _e('The list of tasks','elsagrabber');?></h3>
   <ul class="tabs">
-    <li><a href="#tab1" class="elsa_A">Список заданий</a></li>
-    <li><a href="#tab2" class="elsa_A">Добавить/Редактировать задание</a></li>
+    <li><a href="#tab1" class="elsa_A"><?php _e('The list of tasks','elsagrabber');?></a></li>
+    <li><a href="#tab2" class="elsa_A"><?php _e('Add/Edit task','elsagrabber');?></a></li>
   </ul>
   <div class="tab_container">
     <div id="tab1" class="tab_content">
@@ -86,7 +90,7 @@ function elsa_selfmenu()
             foreach ($all as $t)
               {
               $out='';
-              $out.='<div id="elsatask">'.$t['name'].' — запуск: '.$t['time'].'; файл: ['.$t['filename'].']';
+              $out.='<div id="elsatask">'.$t['name'].' - '.__('Time run','elsagraber').': '.$t['time'].'; '.__('File','elsagraber').': ['.$t['filename'].']';
               $out.='<a href="'.$up2.'_deltask.php?KeepThis=true&modal=true&deltask='.$t['filename'].'" class="thickbox"><img src="'.$up2.'images/delete.png"></a>';
               $out.='<a href="javascript:void(0)" onclick="editTask(\''.$t['filename'].'\')"><img src="'.$up2.'images/edit.png"></a>';
 
@@ -112,42 +116,42 @@ function elsa_selfmenu()
 
     <div id="tab2" class="tab_content">
      <form action="" method="post" name="edit_add">
-      Название<br>
+      <?php _e('Title','elsagrabber');?><br>
       <input type="text" name="tname" value="" class="inp"><br>
-      Период запуска<br>
+      <?php _e('Time run','elsagrabber');?><br>
       <input type="text" name="ttime" value="" class="inp"><br>
-      Адрес RSS<br>
+      <?php _e('RSS adress','elsagrabber');?><br>
       <input type="text" name="trss" value="" class="inp"><br>
-      Информация<br>
+      <?php _e('Information','elsagrabber');?><br>
       <input type="text" name="tinfo" value="" class="inp"><br>
       <input type="hidden" name="tfilename" value=""><br>
-      Текст задания<br>
+      <?php _e('Content task','elsagrabber');?><br>
       <textarea name="ttext" class="textinp"></textarea>
       <br><br>
-      <input type="submit" name="tadd" value="Добавить/Редактировать"> <input type="reset" name="tclear" value="Очистить">
+      <input type="submit" name="tadd" value="<?php _e('Add/Edit task','elsagrabber');?>"> <input type="reset" name="tclear" value="<?php _e('Clear','elsagrabber');?>">
 
      </form>
     </div>
   </div>
-<h2>&nbsp;</h2><h3>Пути</h3>
+<h2>&nbsp;</h2><h3><?php _e('Patch','elsagrabber');?></h3>
 <form action="" name="elsa_patches" method="post">
-Абсолютный путь к директории с изображениями<br>
+<?php _e('Absolute way to a directory with images','elsagrabber');?><br>
 <input type="text" name="elsapatches_abs" value="<?=get_option('elsa_absimgpatch',false);?>" class="inp2"><br>
-<br>URL к директории с изображениями<br>
+<br><?php _e('URL to a directory with images','elsagrabber');?><br>
 <input type="text" name="elsapatches_url" value="<?=get_option('elsa_imgurl',false);?>" class="inp2">
-<h3>Ссылки на плагин</h3>
+<h3><?php _e('Links on plugin','elsagrabber');?></h3>
 <select size="1" name="elsa_linksoption">
-	<option value="link1" <?php if(get_option('elsa_links',false)==='link1') echo 'selected';?>>в футере</option>
- <option value="link2" <?php if(get_option('elsa_links',false)==='link2') echo 'selected';?>>в постах</option>
- <option value="link3" <?php if(get_option('elsa_links',false)==='link3') echo 'selected';?>>нигде</option>
+	<option value="link1" <?php if(get_option('elsa_links',false)==='link1') echo 'selected';?>><?php _e('In footer','elsagrabber');?></option>
+ <option value="link2" <?php if(get_option('elsa_links',false)==='link2') echo 'selected';?>><?php _e('In posts','elsagrabber');?></option>
+ <option value="link3" <?php if(get_option('elsa_links',false)==='link3') echo 'selected';?>><?php _e('Not put','elsagrabber');?></option>
 	</select>
 <br><br>
-<input type="submit" name="elsa_change_patch" value="Установить">
+<input type="submit" name="elsa_change_patch" value="<?php _e('Apply','elsagrabber');?>">
 </form>
 
  </div>
 <h2>&nbsp;</h2>
-<h3>Информация</h3>
+<h3><?php _e('Information','elsagrabber');?></h3>
 <img src="<?=$up2;?>images/elsalogo.png"><br> <br>
 <div id="elsa_right">
 
@@ -161,21 +165,21 @@ if (isset($_REQUEST['testtask']))
 ?>
 
 
-  <br><br><br><b>Сайты разработчиков:</b><br>
+  <br><br><br><b><?php _e('Sites of developers','elsagrabber');?>:</b><br>
   <a href="http://elchepunebrek.ru" target="_elche">Elhepunebrek</a><br>
   <a href="http://savitov.ru" target="_savitov">Savitov</a><br>
-  <a href="http://vkontakte.ru/club28928982" target="_vkelsa">Группа Vkontakte.ru</a><br>
-  <a href="http://www.facebook.com/pages/ElSa-Grabber/245560198797041" target="_elsafa">Страница на Facebook.com</a><br><br>
+  <a href="http://vkontakte.ru/club28928982" target="_vkelsa"><?php _e('Page','elsagrabber');?> Vkontakte.ru</a><br>
+  <a href="http://www.facebook.com/pages/ElSa-Grabber/245560198797041" target="_elsafa"><?php _e('Page','elsagrabber');?> Facebook.com</a><br><br>
   
-<h3>Понравилось? Кликайте!</h3>
+<h3><?php _e('It was pleasant? Click!','elsagrabber');?></h3>
 <div id="fb-root"></div>
 <script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>
 <fb:like-box href="http://www.facebook.com/pages/ElSa-Grabber/245560198797041" width="400" show_faces="false"
 border_color="" stream="false" header="true">
 </fb:like-box>
 
-<h3>Страничка плагина</h3>
-<a href="http://elchepunebrek.ru/novyj-plagin-grabber-dlya-wp.html" target="_elsapp">Описание и документация (RU)</a>
+<h3><?php _e('Page of plugin','elsagrabber');?></h3>
+<a href="http://elchepunebrek.ru/novyj-plagin-grabber-dlya-wp.html" target="_elsapp"><?php _e('Plugin description','elsagrabber');?> (RU)</a>
 
 </div>
   </div>
@@ -242,13 +246,16 @@ function elsa_deactive()
   }
 function elsa_get_footer()
   {
+   $elsamo=WP_PLUGIN_DIR.'/'.dirname( plugin_basename( __FILE__ ) ) . '/language/'.get_locale().'.mo';
+   load_textdomain('elsagrabber',$elsamo);
   $link=get_option('elsa_links',false);
     if (($link==='link1') || empty($link))
       {
       echo $ELSAHTML='<script language=javascript>
       var elsaElem = document.createElement("div");
       elsaElem.id = "elsa_links";
-      var elsalinktext = "На сайте работает <a target=\"_elsasites\" href=\"http://elchepunebrek.ru/novyj-plagin-grabber-dlya-wp.html\">ElSa grabber</a>";
+      var starttext="'.__("On site work ","elsagrabber").'";
+      var elsalinktext = starttext+" <a target=\"_elsasites\" href=\"http://elchepunebrek.ru/novyj-plagin-grabber-dlya-wp.html\">ElSa grabber</a>";
       elsaElem.innerHTML="<p align=\"center\"><font size=1>"+elsalinktext+"</font></p>";
        document.body.appendChild(elsaElem);
        </script>';

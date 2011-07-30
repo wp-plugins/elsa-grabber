@@ -15,28 +15,20 @@
     $t_text=$task['text'];
     $t_rss=$task['rss'];
 
-   Echo <<<HTML
-   <h2>Задание — $t_name </h2>
-   <br><u>Период запуска</u> — $t_time
-   <br><u>Адрес RSS</u> — $t_rss
-   <br><u>Информация</u> — $t_info
+   Echo "<h2>".__('Title','elsagrabber')." - $t_name </h2>
+   <br><u>".__('Time run','elsagrabber')."</u> - $t_time
+   <br><u>".__('RSS adress','elsagrabber')."</u> - $t_rss
+   <br><u>".__('Information','elsagrabber')."</u> - $t_info
    <hr>
-   <b>Содержание:</b><br>$t_text
-
-
-
-
-
-
-HTML;
+   <b>".__('Content task','elsagrabber').":</b><br>$t_text";
    ?>
 
 
    <br><br><br><div id="alert">  </div>
    <form action="" method="post">
    <input type="hidden" name="testtask" value="<?=$del;?>">
-   <input type="submit" name="ttest" value="Тестировать" style="float:left">
-   <input type="button" value="Закрыть" name="no" onclick="tb_remove()" style="float:right"></div>
+   <input type="submit" name="ttest" value="<?php _e('Test','elsagrabber');?>" style="float:left">
+   <input type="button" value="<?php _e('Close','elsagrabber');?>" name="no" onclick="tb_remove()" style="float:right"></div>
    </form>
 
 

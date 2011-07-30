@@ -1,6 +1,9 @@
-<html><head><title></title></head><body>
+<html><head><title></title><meta http-equiv="content-type" content="text/html; charset=utf-8" /></head><body>
    <?php
    require_once('core/loader.php');
+   //$elsamo=WP_PLUGIN_DIR.'/'.dirname( plugin_basename( __FILE__ ) ) . '/language/'.get_locale().'.mo';
+   //load_textdomain('elsagrabber',$elsamo);
+
 
    $del=$_REQUEST['deltask'];
 
@@ -13,28 +16,21 @@
     $t_text=$task['text'];
     $t_rss=$task['rss'];
 
-   Echo <<<HTML
-   <h2>Задание — $t_name </h2>
-   <br><u>Период запуска</u> — $t_time
-   <br><u>Адрес RSS</u> — $t_rss
-   <br><u>Информация</u> — $t_info
+   Echo "
+   <h2>".__('Title','elsagrabber')." - $t_name </h2>
+   <u>".__('Time run','elsagrabber')."</u> - $t_time
+   <br><u>".__('RSS adress','elsagrabber')."</u> - $t_rss
+   <br><u>".__('Information','elsagrabber')."</u> - $t_info
    <hr>
-   <b>Содержание:</b><br>$t_text
-
-
-
-
-
-
-HTML;
+   <b>".__('Content task','elsagrabber').":</b><br>$t_text";
    ?>
 
 
-   <br><br><br><div id="alert"><b>Вы действительно хотите удалить это задание?</b>
+   <br><br><br><div id="alert"><b><?php _e('You really want to remove this task?','elsagrabber');?></b>
    <form action="" method="post">
    <input type="hidden" value="<?=$del;?>" name="deletetask">
-   <input type="submit" value="Да" name="yes">
-   <input type="button" value="Нет" name="no" onclick="tb_remove()"></div>
+   <input type="submit" value="<?php _e('Yes','elsagrabber');?>" name="yes">
+   <input type="button" value="<?php _e('No','elsagrabber');?>" name="no" onclick="tb_remove()"></div>
 
 
    </form>
