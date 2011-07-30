@@ -1,0 +1,148 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Elsa grabber\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-07-30 17:30+0300\n"
+"PO-Revision-Date: 2011-07-30 17:33+0300\n"
+"Last-Translator: Elchesav <kesha@savitov.ru>\n"
+"Language-Team: ElSa group <kesha@savitov.ru>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: C:\\denwer10\\home\\elsa.ru\\www\\wp-content\\plugins\\elsa-grabber\n"
+"X-Poedit-Language: Russian\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-SearchPath-0: C:\\denwer10\\home\\elsa.ru\\www\\wp-content\\plugins\\elsa-grabber\n"
+
+#: C:\denwer10\home\elsa.ru\www\wp-content\plugins\elsa-grabber/elsa_grabber.php:20
+msgid "The panel of manager ElSa Grabber"
+msgstr "Панель администратора ElSa Grabber"
+
+#: C:\denwer10\home\elsa.ru\www\wp-content\plugins\elsa-grabber/elsa_grabber.php:22
+#: C:\denwer10\home\elsa.ru\www\wp-content\plugins\elsa-grabber/elsa_grabber.php:24
+msgid "The list of tasks"
+msgstr "Список заданий"
+
+#: C:\denwer10\home\elsa.ru\www\wp-content\plugins\elsa-grabber/elsa_grabber.php:25
+#: C:\denwer10\home\elsa.ru\www\wp-content\plugins\elsa-grabber/elsa_grabber.php:131
+msgid "Add/Edit task"
+msgstr "Добавить/Редактировать задание"
+
+#: C:\denwer10\home\elsa.ru\www\wp-content\plugins\elsa-grabber/elsa_grabber.php:93
+#: C:\denwer10\home\elsa.ru\www\wp-content\plugins\elsa-grabber/elsa_grabber.php:121
+#: C:\denwer10\home\elsa.ru\www\wp-content\plugins\elsa-grabber/_deltask.php:21
+#: C:\denwer10\home\elsa.ru\www\wp-content\plugins\elsa-grabber/_viewtask.php:19
+msgid "Time run"
+msgstr "Период запуска"
+
+#: C:\denwer10\home\elsa.ru\www\wp-content\plugins\elsa-grabber/elsa_grabber.php:93
+msgid "File"
+msgstr "Файл"
+
+#: C:\denwer10\home\elsa.ru\www\wp-content\plugins\elsa-grabber/elsa_grabber.php:119
+#: C:\denwer10\home\elsa.ru\www\wp-content\plugins\elsa-grabber/_deltask.php:20
+#: C:\denwer10\home\elsa.ru\www\wp-content\plugins\elsa-grabber/_viewtask.php:18
+msgid "Title"
+msgstr "Название"
+
+#: C:\denwer10\home\elsa.ru\www\wp-content\plugins\elsa-grabber/elsa_grabber.php:123
+#: C:\denwer10\home\elsa.ru\www\wp-content\plugins\elsa-grabber/_deltask.php:22
+#: C:\denwer10\home\elsa.ru\www\wp-content\plugins\elsa-grabber/_viewtask.php:20
+msgid "RSS adress"
+msgstr "Адресс RSS"
+
+#: C:\denwer10\home\elsa.ru\www\wp-content\plugins\elsa-grabber/elsa_grabber.php:125
+#: C:\denwer10\home\elsa.ru\www\wp-content\plugins\elsa-grabber/elsa_grabber.php:154
+#: C:\denwer10\home\elsa.ru\www\wp-content\plugins\elsa-grabber/_deltask.php:23
+#: C:\denwer10\home\elsa.ru\www\wp-content\plugins\elsa-grabber/_viewtask.php:21
+msgid "Information"
+msgstr "Информация"
+
+#: C:\denwer10\home\elsa.ru\www\wp-content\plugins\elsa-grabber/elsa_grabber.php:128
+#: C:\denwer10\home\elsa.ru\www\wp-content\plugins\elsa-grabber/_deltask.php:25
+#: C:\denwer10\home\elsa.ru\www\wp-content\plugins\elsa-grabber/_viewtask.php:23
+msgid "Content task"
+msgstr "Текст задания"
+
+#: C:\denwer10\home\elsa.ru\www\wp-content\plugins\elsa-grabber/elsa_grabber.php:131
+msgid "Clear"
+msgstr "Очистить"
+
+#: C:\denwer10\home\elsa.ru\www\wp-content\plugins\elsa-grabber/elsa_grabber.php:136
+msgid "Patch"
+msgstr "Пути"
+
+#: C:\denwer10\home\elsa.ru\www\wp-content\plugins\elsa-grabber/elsa_grabber.php:138
+msgid "Absolute way to a directory with images"
+msgstr "Абсолютный путь к папке с картинками"
+
+#: C:\denwer10\home\elsa.ru\www\wp-content\plugins\elsa-grabber/elsa_grabber.php:140
+msgid "URL to a directory with images"
+msgstr "URL к папке с картинками"
+
+#: C:\denwer10\home\elsa.ru\www\wp-content\plugins\elsa-grabber/elsa_grabber.php:142
+msgid "Links on plugin"
+msgstr "Ссылки на плагин"
+
+#: C:\denwer10\home\elsa.ru\www\wp-content\plugins\elsa-grabber/elsa_grabber.php:144
+msgid "In footer"
+msgstr "В футере"
+
+#: C:\denwer10\home\elsa.ru\www\wp-content\plugins\elsa-grabber/elsa_grabber.php:145
+msgid "In posts"
+msgstr "В постах"
+
+#: C:\denwer10\home\elsa.ru\www\wp-content\plugins\elsa-grabber/elsa_grabber.php:146
+msgid "Not put"
+msgstr "Не ставить"
+
+#: C:\denwer10\home\elsa.ru\www\wp-content\plugins\elsa-grabber/elsa_grabber.php:149
+msgid "Apply"
+msgstr "Применить"
+
+#: C:\denwer10\home\elsa.ru\www\wp-content\plugins\elsa-grabber/elsa_grabber.php:168
+msgid "Sites of developers"
+msgstr "Сайты разработчиков"
+
+#: C:\denwer10\home\elsa.ru\www\wp-content\plugins\elsa-grabber/elsa_grabber.php:171
+#: C:\denwer10\home\elsa.ru\www\wp-content\plugins\elsa-grabber/elsa_grabber.php:172
+msgid "Page"
+msgstr "Страница"
+
+#: C:\denwer10\home\elsa.ru\www\wp-content\plugins\elsa-grabber/elsa_grabber.php:174
+msgid "It was pleasant? Click!"
+msgstr "Понравилось? Кликайте!"
+
+#: C:\denwer10\home\elsa.ru\www\wp-content\plugins\elsa-grabber/elsa_grabber.php:181
+msgid "Page of plugin"
+msgstr "Страница плагина"
+
+#: C:\denwer10\home\elsa.ru\www\wp-content\plugins\elsa-grabber/elsa_grabber.php:182
+msgid "Plugin description"
+msgstr "Описание плагина"
+
+#: C:\denwer10\home\elsa.ru\www\wp-content\plugins\elsa-grabber/elsa_grabber.php:257
+msgid "On site work "
+msgstr "На сайте работает"
+
+#: C:\denwer10\home\elsa.ru\www\wp-content\plugins\elsa-grabber/_deltask.php:29
+msgid "You really want to remove this task?"
+msgstr "Вы действительно хотите удалить это задание?"
+
+#: C:\denwer10\home\elsa.ru\www\wp-content\plugins\elsa-grabber/_deltask.php:32
+msgid "Yes"
+msgstr "Да"
+
+#: C:\denwer10\home\elsa.ru\www\wp-content\plugins\elsa-grabber/_deltask.php:33
+msgid "No"
+msgstr "Нет"
+
+#: C:\denwer10\home\elsa.ru\www\wp-content\plugins\elsa-grabber/_viewtask.php:30
+msgid "Test"
+msgstr "Тест"
+
+#: C:\denwer10\home\elsa.ru\www\wp-content\plugins\elsa-grabber/_viewtask.php:31
+msgid "Close"
+msgstr "Закрыть"
+
