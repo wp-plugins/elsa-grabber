@@ -14,30 +14,30 @@ The given plug-in copies materials from other sites.
 Copying occurs through parsing RSS of a tape of a site-source, however, information extraction can occur not only from RSS, but also from site pages.
 
 Distinctive features of the given plug-in:
-1. Parsing RSS of a tape of a site – a source and extraction of the information from it.
-2. Parsing HTML of pages of a site – a source and extraction of the information from it.
-3. Download pictures from a site – a source on a site – the receiver.
-4. Support of different codings of the text.
-5. Support wrong HTML.
-6. Import of the received data on a site – the receiver.
-7. Start under the schedule.
-8. Evident testing of the task and a debugging facility.
+<br>1. Parsing RSS of a tape of a site вЂ“ a source and extraction of the information from it.
+<br>2. Parsing HTML of pages of a site вЂ“ a source and extraction of the information from it.
+<br>3. Download pictures from a site вЂ“ a source on a site вЂ“ the receiver.
+<br>4. Support of different codings of the text.
+<br>5. Support wrong HTML.
+<br>6. Import of the received data on a site вЂ“ the receiver.
+<br>7. Start under the schedule.
+<br>8. Evident testing of the task and a debugging facility.
 
-RU
-Данный плагин копирует материалы с других сайтов.
+<br><br>RU
+<br>Р”Р°РЅРЅС‹Р№ РїР»Р°РіРёРЅ РєРѕРїРёСЂСѓРµС‚ РјР°С‚РµСЂРёР°Р»С‹ СЃ РґСЂСѓРіРёС… СЃР°Р№С‚РѕРІ.
 
-Копирование происходит через парсинг RSS ленты сайта-источника, однако, извлечение информации может происходить не только из RSS, но и из страничек сайта.
+РљРѕРїРёСЂРѕРІР°РЅРёРµ РїСЂРѕРёСЃС…РѕРґРёС‚ С‡РµСЂРµР· РїР°СЂСЃРёРЅРі RSS Р»РµРЅС‚С‹ СЃР°Р№С‚Р°-РёСЃС‚РѕС‡РЅРёРєР°, РѕРґРЅР°РєРѕ, РёР·РІР»РµС‡РµРЅРёРµ РёРЅС„РѕСЂРјР°С†РёРё РјРѕР¶РµС‚ РїСЂРѕРёСЃС…РѕРґРёС‚СЊ РЅРµ С‚РѕР»СЊРєРѕ РёР· RSS, РЅРѕ Рё РёР· СЃС‚СЂР°РЅРёС‡РµРє СЃР°Р№С‚Р°.
 
-Отличительные особенности данного плагина:
-1. Парсинг RSS ленты сайта – источника и извлечение информации из нее.
-2. Парсинг HTML страниц сайта – источника и извлечение информации из нее.
-3. Закачка картинок с сайта – источника на сайт – приемник.
-4. Поддержка разных кодировок текста.
-5. Поддержка синтаксически неправильного HTML.
-6. Импорт полученных данных на сайт – приемник.
-7. Запуск по расписанию.
-8. Наглядное тестирование задания и средства отладки.
-
+<br>РћС‚Р»РёС‡РёС‚РµР»СЊРЅС‹Рµ РѕСЃРѕР±РµРЅРЅРѕСЃС‚Рё РґР°РЅРЅРѕРіРѕ РїР»Р°РіРёРЅР°:
+<br>1. РџР°СЂСЃРёРЅРі RSS Р»РµРЅС‚С‹ СЃР°Р№С‚Р° вЂ“ РёСЃС‚РѕС‡РЅРёРєР° Рё РёР·РІР»РµС‡РµРЅРёРµ РёРЅС„РѕСЂРјР°С†РёРё РёР· РЅРµРµ.
+<br>2. РџР°СЂСЃРёРЅРі HTML СЃС‚СЂР°РЅРёС† СЃР°Р№С‚Р° вЂ“ РёСЃС‚РѕС‡РЅРёРєР° Рё РёР·РІР»РµС‡РµРЅРёРµ РёРЅС„РѕСЂРјР°С†РёРё РёР· РЅРµРµ.
+<br>3. Р—Р°РєР°С‡РєР° РєР°СЂС‚РёРЅРѕРє СЃ СЃР°Р№С‚Р° вЂ“ РёСЃС‚РѕС‡РЅРёРєР° РЅР° СЃР°Р№С‚ вЂ“ РїСЂРёРµРјРЅРёРє.
+<br>4. РџРѕРґРґРµСЂР¶РєР° СЂР°Р·РЅС‹С… РєРѕРґРёСЂРѕРІРѕРє С‚РµРєСЃС‚Р°.
+<br>5. РџРѕРґРґРµСЂР¶РєР° СЃРёРЅС‚Р°РєСЃРёС‡РµСЃРєРё РЅРµРїСЂР°РІРёР»СЊРЅРѕРіРѕ HTML.
+<br>6. РРјРїРѕСЂС‚ РїРѕР»СѓС‡РµРЅРЅС‹С… РґР°РЅРЅС‹С… РЅР° СЃР°Р№С‚ вЂ“ РїСЂРёРµРјРЅРёРє.
+<br>7. Р—Р°РїСѓСЃРє РїРѕ СЂР°СЃРїРёСЃР°РЅРёСЋ.
+<br>8. РќР°РіР»СЏРґРЅРѕРµ С‚РµСЃС‚РёСЂРѕРІР°РЅРёРµ Р·Р°РґР°РЅРёСЏ Рё СЃСЂРµРґСЃС‚РІР° РѕС‚Р»Р°РґРєРё.
+<br><br>
 
 If u have any problem with my plugin u can write me to kesha@savitov.ru
 For more information search on http://elchepunebrek.ru/novyj-plagin-grabber-dlya-wp.html
