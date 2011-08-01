@@ -1,6 +1,6 @@
 === ElSa grabber ===
 Contributors: Elchesav
-Tags: grabber, ElSa grabber, RSS, RSS grabber, autosite
+Tags: grabber, ElSa grabber, RSS, RSS grabber, post, posts, auto poster, plugin,
 Requires at least: 3.0
 Tested up to: 3.2.1
 Stable tag: 3.1
