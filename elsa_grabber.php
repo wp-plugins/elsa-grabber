@@ -3,7 +3,7 @@
 Plugin Name: ElSa_grabber
 Plugin URI: http://elchepunebrek.ru/novyj-plagin-grabber-dlya-wp.html
 Description: Граббер RSS лент
-Version: 3.1
+Version: 3.1.1
 Author: Elchepunebrek, Savitov
 Author URI: http://Elchepunebrek.ru, http://Savitov.ru
 */
@@ -229,8 +229,8 @@ function elsaAddCss()
   }
 function elsa_add_menu() {
     $d=plugin_dir_url(__FILE__);
-    add_options_page('ElSa Grabber [v 3.0]', 'ElSa Grabber [v 3.0]', 8, __FILE__, 'elsa_selfmenu');
-		wp_enqueue_script('jq', 'http://savitov.ru/shared/jquery.js');
+    add_options_page('ElSa Grabber', 'ElSa Grabber', 8, __FILE__, 'elsa_selfmenu');
+		//wp_enqueue_script('jq', 'http://savitov.ru/shared/jquery.js');
 		wp_enqueue_script('thickbox', 'http://www.savitov.ru/shared/thickbox.js');
 		wp_enqueue_script('elsa_js_file', "{$d}js.js");
     add_action('admin_head', 'elsaAddCss', 999);
