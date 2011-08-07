@@ -1,18 +1,18 @@
-jQuery(document).ready(function() {
+JQuery(document).ready(function() {
 
 
-    jQuery(".tab_content").hide();
-    jQuery("ul.tabs li:first").addClass("active").show();
-    jQuery(".tab_content:first").show();
+    JQuery(".tab_content").hide();
+    JQuery("ul.tabs li:first").addClass("active").show();
+    JQuery(".tab_content:first").show();
 
 
-    jQuery("ul.tabs li").click(function() {
+    JQuery("ul.tabs li").click(function() {
 
-        jQuery("ul.tabs li").removeClass("active");
-        jQuery(this).addClass("active");
-        jQuery(".tab_content").hide();
-        var activeTab = $(this).find("a").attr("href");
-        jQuery(activeTab).fadeIn();
+        JQuery("ul.tabs li").removeClass("active");
+        JQuery(this).addClass("active");
+        JQuery(".tab_content").hide();
+        var activeTab = JQuery(this).find("a").attr("href");
+        JQuery(activeTab).fadeIn();
 return false;
     });
 });
