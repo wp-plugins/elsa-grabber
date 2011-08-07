@@ -8,7 +8,7 @@ Stable tag: 3.1
 For more information search on http://elchepunebrek.ru/novyj-plagin-grabber-dlya-wp.html
 
 == Description ==
-EN
+EN<br>
 The given plug-in copies materials from other sites.
 
 Copying occurs through parsing RSS of a tape of a site-source, however, information extraction can occur not only from RSS, but also from site pages.
@@ -49,6 +49,9 @@ For more information search on http://elchepunebrek.ru/novyj-plagin-grabber-dlya
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 
 == Changelog ==
+
+= 3.1.1 =
+* Fixed problem with including JS files
 
 = 3.1 =
 * Support of English language is added
