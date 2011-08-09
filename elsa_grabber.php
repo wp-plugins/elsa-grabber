@@ -3,7 +3,7 @@
 Plugin Name: ElSa_grabber
 Plugin URI: http://elchepunebrek.ru/novyj-plagin-grabber-dlya-wp.html
 Description: Граббер RSS лент
-Version: 3.1.1
+Version: 3.1.2
 Author: Elchepunebrek, Savitov
 Author URI: http://Elchepunebrek.ru, http://Savitov.ru
 */
@@ -137,6 +137,8 @@ function elsa_selfmenu()
 <form action="" name="elsa_patches" method="post">
 <?php _e('Absolute way to a directory with images','elsagrabber');?><br>
 <input type="text" name="elsapatches_abs" value="<?=get_option('elsa_absimgpatch',false);?>" class="inp2"><br>
+<?=elsa_test_patch();?><br>
+
 <br><?php _e('URL to a directory with images','elsagrabber');?><br>
 <input type="text" name="elsapatches_url" value="<?=get_option('elsa_imgurl',false);?>" class="inp2">
 <h3><?php _e('Links on plugin','elsagrabber');?></h3>
@@ -217,6 +219,30 @@ border_color="" stream="false" header="true">
           }).responseText;
     return ret;
      }
+
+    $(document).ready(function() {
+
+
+    $(".tab_content").hide();
+    $("ul.tabs li:first").addClass("active").show();
+    $(".tab_content:first").show();
+
+
+    $("ul.tabs li").click(function() {
+
+        $("ul.tabs li").removeClass("active");
+        $(this).addClass("active");
+        $(".tab_content").hide();
+        var activeTab = $(this).find("a").attr("href");
+        $(activeTab).fadeIn();
+return false;
+    });
+});
+
+
+
+
+
     </script>
     
   <?php
@@ -229,11 +255,10 @@ function elsaAddCss()
   }
 function elsa_add_menu() {
     $d=plugin_dir_url(__FILE__);
-    add_options_page('ElSa Grabber', 'ElSa Grabber', 8, __FILE__, 'elsa_selfmenu');
-		//wp_enqueue_script('jq', 'http://savitov.ru/shared/jquery.js');
+    $page=add_options_page('ElSa Grabber', 'ElSa Grabber', 8, __FILE__, 'elsa_selfmenu');
 		wp_enqueue_script('thickbox', 'http://www.savitov.ru/shared/thickbox.js');
-		wp_enqueue_script('elsa_js_file', "{$d}js.js");
     add_action('admin_head', 'elsaAddCss', 999);
+    //add_action('admin_print_scripts-' . $page, 'elsa_test_patch');
     require(get_option('elsa_pluginpatch',false)."/core/loader.php");
 }
 function elsa_deactive()
@@ -262,6 +287,19 @@ function elsa_get_footer()
 
       }
   }
+function elsa_test_patch()
+  {
+  $patch=get_option('elsa_absimgpatch',false);
+  if (is_dir($patch) && (false))
+    {
+    $GL_elsa_patch_test=__('The folder is found','elsagraber');
+    }
+  else
+    {
+    $GL_elsa_patch_test=__('<span style="background-color:#850000; color:#ffffff;">&nbsp;The folder isn`t found&nbsp;</span>','elsagraber');
+    }
+  return $GL_elsa_patch_test;
+  }
 function  elsa_active()
   {
   add_option( 'elsa_playtask', '', '', 'yes' );
@@ -269,6 +307,7 @@ function  elsa_active()
   add_option( 'elsa_imgurl', get_option('siteurl',false).'/wp-content/elsa-grabber/', '', 'yes' );
   add_option('elsa_links','','','yes');
   add_option('elsa_pluginpatch',dirname(__FILE__),'',yes);
+  elsa_test_patch();
   }
 add_action('admin_menu', 'elsa_add_menu');
 register_activation_hook( __FILE__, 'elsa_active' );

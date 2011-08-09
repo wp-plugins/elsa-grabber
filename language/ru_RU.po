@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Elsa grabber\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-07-30 17:30+0300\n"
-"PO-Revision-Date: 2011-07-30 17:33+0300\n"
+"POT-Creation-Date: 2011-08-09 22:10+0300\n"
+"PO-Revision-Date: 2011-08-09 22:10+0300\n"
 "Last-Translator: Elchesav <kesha@savitov.ru>\n"
 "Language-Team: ElSa group <kesha@savitov.ru>\n"
 "MIME-Version: 1.0\n"
@@ -122,9 +122,17 @@ msgstr "Страница плагина"
 msgid "Plugin description"
 msgstr "Описание плагина"
 
-#: C:\denwer10\home\elsa.ru\www\wp-content\plugins\elsa-grabber/elsa_grabber.php:257
+#: C:\denwer10\home\elsa.ru\www\wp-content\plugins\elsa-grabber/elsa_grabber.php:280
 msgid "On site work "
 msgstr "На сайте работает"
+
+#: C:\denwer10\home\elsa.ru\www\wp-content\plugins\elsa-grabber/elsa_grabber.php:293
+msgid "The folder is found"
+msgstr "Папка найдена"
+
+#: C:\denwer10\home\elsa.ru\www\wp-content\plugins\elsa-grabber/elsa_grabber.php:297
+msgid "The folder isn`t found"
+msgstr "Папка не найдена"
 
 #: C:\denwer10\home\elsa.ru\www\wp-content\plugins\elsa-grabber/_deltask.php:29
 msgid "You really want to remove this task?"
