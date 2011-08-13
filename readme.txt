@@ -3,7 +3,7 @@ Contributors: Elchesav
 Tags: grabber, ElSa grabber, RSS, RSS grabber, post, posts, auto poster, plugin, RSS parser
 Requires at least: 3.0
 Tested up to: 3.2.1
-Stable tag: 3.1
+Stable tag: 3.2
 
 For more information search on http://elchepunebrek.ru/novyj-plagin-grabber-dlya-wp.html
 
