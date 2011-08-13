@@ -3,7 +3,7 @@
 Plugin Name: ElSa_grabber
 Plugin URI: http://elchepunebrek.ru/novyj-plagin-grabber-dlya-wp.html
 Description: Граббер RSS лент
-Version: 3.1.2
+Version: 3.2
 Author: Elchepunebrek, Savitov
 Author URI: http://Elchepunebrek.ru, http://Savitov.ru
 */
@@ -196,7 +196,7 @@ border_color="" stream="false" header="true">
       var tinfo=getParamTask(a,'info');  document.edit_add.tinfo.value=tinfo;
       var ttext=getParamTask(a,'text');  document.edit_add.ttext.value=ttext;
       var tfilename=getParamTask(a,'filename');   document.edit_add.tfilename.value=tfilename;
-      $("ul.tabs li").click();
+      jQuery("ul.tabs li").click();
       
       }
       
@@ -206,7 +206,7 @@ border_color="" stream="false" header="true">
     var urlf="<?=plugin_dir_url(__FILE__);?>_globaltask.php";
     var alldata = 'filename='+a+'&need='+a1;
     alldata+='&getparam=true'
-       ret=$.ajax({
+       ret=jQuery.ajax({
        url: urlf,
        cache: false,
        error:function (b,b1,b2){alert(b2);},
@@ -220,21 +220,21 @@ border_color="" stream="false" header="true">
     return ret;
      }
 
-    $(document).ready(function() {
+    jQuery(document).ready(function() {
 
 
-    $(".tab_content").hide();
-    $("ul.tabs li:first").addClass("active").show();
-    $(".tab_content:first").show();
+    jQuery(".tab_content").hide();
+    jQuery("ul.tabs li:first").addClass("active").show();
+    jQuery(".tab_content:first").show();
 
 
-    $("ul.tabs li").click(function() {
+    jQuery("ul.tabs li").click(function() {
 
-        $("ul.tabs li").removeClass("active");
-        $(this).addClass("active");
-        $(".tab_content").hide();
-        var activeTab = $(this).find("a").attr("href");
-        $(activeTab).fadeIn();
+        jQuery("ul.tabs li").removeClass("active");
+        jQuery(this).addClass("active");
+        jQuery(".tab_content").hide();
+        var activeTab = jQuery(this).find("a").attr("href");
+        jQuery(activeTab).fadeIn();
 return false;
     });
 });
@@ -257,6 +257,7 @@ function elsa_add_menu() {
     $d=plugin_dir_url(__FILE__);
     $page=add_options_page('ElSa Grabber', 'ElSa Grabber', 8, __FILE__, 'elsa_selfmenu');
 		wp_enqueue_script('thickbox', 'http://www.savitov.ru/shared/thickbox.js');
+		wp_enqueue_script('jquery');
     add_action('admin_head', 'elsaAddCss', 999);
     //add_action('admin_print_scripts-' . $page, 'elsa_test_patch');
     require(get_option('elsa_pluginpatch',false)."/core/loader.php");
@@ -290,7 +291,7 @@ function elsa_get_footer()
 function elsa_test_patch()
   {
   $patch=get_option('elsa_absimgpatch',false);
-  if (is_dir($patch) && (false))
+  if (is_dir($patch))
     {
     $GL_elsa_patch_test=__('The folder is found','elsagraber');
     }
