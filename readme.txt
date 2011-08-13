@@ -49,6 +49,10 @@ For more information search on http://elchepunebrek.ru/novyj-plagin-grabber-dlya
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 
 == Changelog ==
+
+= 3.2 =
+* Stable release
+
 = 3.1.2 =
 * Some small defects are corrected
 * Automatic check of a folder for pictures
