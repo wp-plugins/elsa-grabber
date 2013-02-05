@@ -2,8 +2,8 @@
 Contributors: Elchesav
 Tags: grabber, ElSa grabber, RSS, RSS grabber, post, posts, auto poster, plugin, RSS parser
 Requires at least: 4.0.1
-Tested up to: 4.0.1
-Stable tag: 4.0.1
+Tested up to: 3.5
+Stable tag: 2.8
 
 For more information search on http://savitov.ru/razdel/elsa
 
