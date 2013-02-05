@@ -1,11 +1,11 @@
-=== ElSa grabber ===
+﻿=== ElSa grabber ===
 Contributors: Elchesav
 Tags: grabber, ElSa grabber, RSS, RSS grabber, post, posts, auto poster, plugin, RSS parser
-Requires at least: 3.0
-Tested up to: 3.2.1
-Stable tag: 3.2
+Requires at least: 4.0.1
+Tested up to: 3.5
+Stable tag: 4.0.1
 
-For more information search on http://elchepunebrek.ru/novyj-plagin-grabber-dlya-wp.html
+For more information search on http://savitov.ru/razdel/elsa
 
 == Description ==
 EN<br>
@@ -40,31 +40,19 @@ Distinctive features of the given plug-in:
 <br><br>
 
 If u have any problem with my plugin u can write me to kesha@savitov.ru
-For more information search on http://elchepunebrek.ru/novyj-plagin-grabber-dlya-wp.html
+For more information search on http://savitov.ru/razdel/elsa
 
 
 == Installation ==
 
 1. Upload `ElSa grabber` folder to the `/wp-content/plugins/` directory.
 2. Activate the plugin through the 'Plugins' menu in WordPress.
+3. Set settings in the menu parameters
 
 == Changelog ==
 
-= 3.2 =
-* Stable release
-
-= 3.1.2 =
-* Some small defects are corrected
-* Automatic check of a folder for pictures
-
-= 3.1.1 =
-* Fixed problem with including JS files
-
-= 3.1 =
-* Support of English language is added
-
-= 3.0.1 =
-* Fixed problem with patch
-
-= 3.0 =
+= 4.0.1 =
 * Initial release
+
+== Upgrade Notice ==
+Если вы используете прежние версии плагина то для избежания потери заданий скопируйте их себе из папки /task которая находится в папке плагина
