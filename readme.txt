@@ -56,3 +56,6 @@ For more information search on http://savitov.ru/razdel/elsa
 
 == Upgrade Notice ==
 Если вы используете прежние версии плагина то для избежания потери заданий скопируйте их себе из папки /task которая находится в папке плагина
+
+== Screenshots ==
+1. List of task
