@@ -1,7 +1,7 @@
-=== ElSa grabber ===
+﻿=== ElSa grabber ===
 Contributors: Elchesav
 Tags: grabber, ElSa grabber, RSS, RSS grabber, post, posts, auto poster, plugin, RSS parser
-Requires at least: 4.0.1
+Requires at least: 2.8
 Tested up to: 3.5
 Stable tag: 2.8
 
