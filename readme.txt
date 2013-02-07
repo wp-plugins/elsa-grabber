@@ -16,12 +16,12 @@ The given plug-in copies materials from other sites.
 Copying occurs through parsing RSS of a tape of a site-source, however, information extraction can occur not only from RSS, but also from site pages.
 
 Distinctive features of the given plug-in:
-<br>1. Parsing RSS of a tape of a site – a source and extraction of the information from it.
-<br>2. Parsing HTML of pages of a site – a source and extraction of the information from it.
-<br>3. Download pictures from a site – a source on a site – the receiver.
+<br>1. Parsing RSS of a tape of a site вЂ“ a source and extraction of the information from it.
+<br>2. Parsing HTML of pages of a site вЂ“ a source and extraction of the information from it.
+<br>3. Download pictures from a site вЂ“ a source on a site вЂ“ the receiver.
 <br>4. Support of different codings of the text.
 <br>5. Support wrong HTML.
-<br>6. Import of the received data on a site – the receiver.
+<br>6. Import of the received data on a site вЂ“ the receiver.
 <br>7. Start under the schedule.
 <br>8. Evident testing of the task and a debugging facility.
 
@@ -31,23 +31,23 @@ If u have any problem with my plugin u can write me to kesha@savitov.ru  <br>
 For more information search on http://savitov.ru/ELSAGR/
 
 RU
-<br>Данный плагин копирует материалы с других сайтов.
+<br>Р”Р°РЅРЅС‹Р№ РїР»Р°РіРёРЅ РєРѕРїРёСЂСѓРµС‚ РјР°С‚РµСЂРёР°Р»С‹ СЃ РґСЂСѓРіРёС… СЃР°Р№С‚РѕРІ.
 
-Копирование происходит через парсинг RSS ленты сайта-источника, однако, извлечение информации может происходить не только из RSS, но и из страничек сайта.
+РљРѕРїРёСЂРѕРІР°РЅРёРµ РїСЂРѕРёСЃС…РѕРґРёС‚ С‡РµСЂРµР· РїР°СЂСЃРёРЅРі RSS Р»РµРЅС‚С‹ СЃР°Р№С‚Р°-РёСЃС‚РѕС‡РЅРёРєР°, РѕРґРЅР°РєРѕ, РёР·РІР»РµС‡РµРЅРёРµ РёРЅС„РѕСЂРјР°С†РёРё РјРѕР¶РµС‚ РїСЂРѕРёСЃС…РѕРґРёС‚СЊ РЅРµ С‚РѕР»СЊРєРѕ РёР· RSS, РЅРѕ Рё РёР· СЃС‚СЂР°РЅРёС‡РµРє СЃР°Р№С‚Р°.
 
-<br>Отличительные особенности данного плагина:
-<br>1. Парсинг RSS ленты сайта – источника и извлечение информации из нее.
-<br>2. Парсинг HTML страниц сайта – источника и извлечение информации из нее.
-<br>3. Закачка картинок с сайта – источника на сайт – приемник.
-<br>4. Поддержка разных кодировок текста.
-<br>5. Поддержка синтаксически неправильного HTML.
-<br>6. Импорт полученных данных на сайт – приемник.
-<br>7. Запуск по расписанию.
-<br>8. Наглядное тестирование задания и средства отладки.
+<br>РћС‚Р»РёС‡РёС‚РµР»СЊРЅС‹Рµ РѕСЃРѕР±РµРЅРЅРѕСЃС‚Рё РґР°РЅРЅРѕРіРѕ РїР»Р°РіРёРЅР°:
+<br>1. РџР°СЂСЃРёРЅРі RSS Р»РµРЅС‚С‹ СЃР°Р№С‚Р° вЂ“ РёСЃС‚РѕС‡РЅРёРєР° Рё РёР·РІР»РµС‡РµРЅРёРµ РёРЅС„РѕСЂРјР°С†РёРё РёР· РЅРµРµ.
+<br>2. РџР°СЂСЃРёРЅРі HTML СЃС‚СЂР°РЅРёС† СЃР°Р№С‚Р° вЂ“ РёСЃС‚РѕС‡РЅРёРєР° Рё РёР·РІР»РµС‡РµРЅРёРµ РёРЅС„РѕСЂРјР°С†РёРё РёР· РЅРµРµ.
+<br>3. Р—Р°РєР°С‡РєР° РєР°СЂС‚РёРЅРѕРє СЃ СЃР°Р№С‚Р° вЂ“ РёСЃС‚РѕС‡РЅРёРєР° РЅР° СЃР°Р№С‚ вЂ“ РїСЂРёРµРјРЅРёРє.
+<br>4. РџРѕРґРґРµСЂР¶РєР° СЂР°Р·РЅС‹С… РєРѕРґРёСЂРѕРІРѕРє С‚РµРєСЃС‚Р°.
+<br>5. РџРѕРґРґРµСЂР¶РєР° СЃРёРЅС‚Р°РєСЃРёС‡РµСЃРєРё РЅРµРїСЂР°РІРёР»СЊРЅРѕРіРѕ HTML.
+<br>6. РРјРїРѕСЂС‚ РїРѕР»СѓС‡РµРЅРЅС‹С… РґР°РЅРЅС‹С… РЅР° СЃР°Р№С‚ вЂ“ РїСЂРёРµРјРЅРёРє.
+<br>7. Р—Р°РїСѓСЃРє РїРѕ СЂР°СЃРїРёСЃР°РЅРёСЋ.
+<br>8. РќР°РіР»СЏРґРЅРѕРµ С‚РµСЃС‚РёСЂРѕРІР°РЅРёРµ Р·Р°РґР°РЅРёСЏ Рё СЃСЂРµРґСЃС‚РІР° РѕС‚Р»Р°РґРєРё.
 <br><br>
 
-При проблемах пишите мне на  kesha@savitov.ru  <br>
-Сайт плагина http://savitov.ru/ELSAGR/
+РџСЂРё РїСЂРѕР±Р»РµРјР°С… РїРёС€РёС‚Рµ РјРЅРµ РЅР°  kesha@savitov.ru  <br>
+РЎР°Р№С‚ РїР»Р°РіРёРЅР° http://savitov.ru/ELSAGR/
 
 
 == Installation ==
@@ -64,7 +64,7 @@ RU
 * Initial release
 
 == Upgrade Notice ==
-Если вы используете прежние версии плагина то для избежания потери заданий скопируйте их себе из папки /task которая находится в папке плагина
+Р•СЃР»Рё РІС‹ РёСЃРїРѕР»СЊР·СѓРµС‚Рµ РїСЂРµР¶РЅРёРµ РІРµСЂСЃРёРё РїР»Р°РіРёРЅР° С‚Рѕ РґР»СЏ РёР·Р±РµР¶Р°РЅРёСЏ РїРѕС‚РµСЂРё Р·Р°РґР°РЅРёР№ СЃРєРѕРїРёСЂСѓР№С‚Рµ РёС… СЃРµР±Рµ РёР· РїР°РїРєРё /task РєРѕС‚РѕСЂР°СЏ РЅР°С…РѕРґРёС‚СЃСЏ РІ РїР°РїРєРµ РїР»Р°РіРёРЅР°
 
 == Screenshots ==
 1. List of task
