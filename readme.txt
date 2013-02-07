@@ -1,9 +1,9 @@
 ﻿=== ElSa grabber ===
 Contributors: Elchesav
 Tags: grabber, ElSa grabber, RSS, RSS grabber, post, posts, auto poster, plugin, RSS parser
-Requires at least: 4.0.1
+Requires at least: 2.8
 Tested up to: 3.5
-Stable tag: 4.0.1
+Stable tag: 2.8
 
 For more information search on http://savitov.ru/razdel/elsa
 
@@ -56,3 +56,6 @@ For more information search on http://savitov.ru/razdel/elsa
 
 == Upgrade Notice ==
 Если вы используете прежние версии плагина то для избежания потери заданий скопируйте их себе из папки /task которая находится в папке плагина
+
+== Screenshots ==
+1. List of task
