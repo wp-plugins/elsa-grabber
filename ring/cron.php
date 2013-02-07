@@ -1,5 +1,5 @@
 <?php
-  require_once($_SERVER['DOCUMENT_ROOT'].'/wp-load.php');
+  require_once('../../../../wp-load.php');
   $t= new elsa_task();
   $p=new elsa_parser();
   $all = $t->getAllTask();

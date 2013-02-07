@@ -42,20 +42,20 @@
        if (empty($dir))
         {
          $ret['class']='elsagrred';
-         $ret['text']=_('Укажите директорию, например - ','ELSAGR').$_SERVER['DOCUMENT_ROOT'].'/ownimages/';
+         $ret['text']=__('Укажите директорию, например - ','ELSAGR').__wDir__.'ownimages/';
          return $ret;
         }
         
        if (!is_dir($wdir))
         {
          $ret['class']='elsagrred';
-         $ret['text']=_('Не могу найти директорию<br>Директория должна быть в ','ELSAGR').$wdir;
+         $ret['text']=__('Не могу найти директорию<br>Директория должна быть в ','ELSAGR').$wdir;
          return $ret;
         }
        if(!is_writable($wdir))
         {
          $ret['class']='elsagrred';
-         $ret['text']=_('Не могу записывать в директорию ','ELSAGR');
+         $ret['text']=__('Не могу записывать в директорию ','ELSAGR');
          return $ret;
         }
       break;
@@ -75,13 +75,22 @@
           {
           $test=__wUrl__.$dir;
           }
-        
+
+
+       if (empty($dir))
+        {
+         $ret['class']='elsagrred';
+         $ret['text']=__('Вы не указали параметр "Папка для загрузок" ','ELSAGR');
+         return $ret;
+        }
+
+
         if ($test[strlen($test)-1]!='/'){$test=$test.'/';}
         
             if (stripos($test,$url)===false)
               {
                $ret['class']='elsagrorg';
-               $ret['text']=_("Вы уверены что установили правильное значение<br>Может быть вы хотели указать: ",'ELSAGR')." <br>$test ?";
+               $ret['text']=__("Вы уверены что установили правильное значение<br>Может быть вы хотели указать: ",'ELSAGR')." <br>$test ?";
                return $ret;
               }
        break;
@@ -91,7 +100,7 @@
          if ((intval($_wopt['elsa-opt-timelimit']['b']).'')!==$_wopt['elsa-opt-timelimit']['b'])
           {
                $ret['class']='elsagrred';
-               $ret['text']=_('Должно быть число<br>Рекомендовано «0»','ELSAGR');
+               $ret['text']=__('Должно быть число<br>Рекомендовано «0»','ELSAGR');
                return $ret;
           }
        break;
@@ -102,7 +111,7 @@
          if (!in_array($_wopt['elsa-opt-setlinks']['b'],$ar))
           {
                $ret['class']='elsagrred';
-               $ret['text']=_('Должно быть одним из следующих значений: «none",«post»,«after post»,«before post»,«site footer»','ELSAGR');
+               $ret['text']=__('Должно быть одним из следующих значений: «none",«post»,«after post»,«before post»,«site footer»','ELSAGR');
                return $ret;
           }
         break;
@@ -114,7 +123,7 @@
          if (!in_array($_wopt['elsa-opt-jquery']['b'],$ar))
           {
                $ret['class']='elsagrred';
-               $ret['text']=_('Должно быть одним из следующих значений: «yes»,«no»','ELSAGR');
+               $ret['text']=__('Должно быть одним из следующих значений: «yes»,«no»','ELSAGR');
                return $ret;
           }
         break;
@@ -124,7 +133,7 @@
          if (empty($_wopt['elsa-opt-key']['b']))
           {
                $ret['class']='elsagrorg';
-               $ret['text']=_('Вы должны зарегистрировать плагин ','ELSAGR').'<a href="?page=elsa-grabber/elsa-grabber.php#e">'._('Читать как','ELSAGR').'</a>';
+               $ret['text']=__('Вы должны зарегистрировать плагин ','ELSAGR').'<a href="?page=elsa-grabber/elsa-grabber.php#e">'.__('Читать как','ELSAGR').'</a>';
                return $ret;
           }
         break;
@@ -134,7 +143,7 @@
          if (empty($_wopt['elsa-opt-domen']['b']))
           {
                $ret['class']='elsagrorg';
-               $ret['text']=_('Вы должны зарегистрировать плагин ','ELSAGR').'<a href="?page=elsa-grabber/elsa-grabber.php#e">'._('Читать как','ELSAGR').'</a>';
+               $ret['text']=__('Вы должны зарегистрировать плагин ','ELSAGR').'<a href="?page=elsa-grabber/elsa-grabber.php#e">'.__('Читать как','ELSAGR').'</a>';
                return $ret;
           }
         break;
@@ -146,7 +155,7 @@
          if (!in_array($_wopt['elsa-opt-lang']['b'],$ar))
           {
                $ret['class']='elsagrred';
-               $ret['text']=_('Должно быть одним из следующих значений: «en»,«ru»','ELSAGR');
+               $ret['text']=__('Должно быть одним из следующих значений: «en»,«ru»','ELSAGR');
                return $ret;
           }
         break;
@@ -205,7 +214,7 @@ function needUpdate($a,$b,$c)
 
   if ($rem['v']==$a)
     {
-    echo _("Вы используете последнюю версию",'ELSAGR');
+    echo __("Вы используете последнюю версию",'ELSAGR');
     return false;
     }
   else
@@ -213,7 +222,7 @@ function needUpdate($a,$b,$c)
     echo "you can update<br>";
     $dom=str_ireplace('http://www.','',get_bloginfo('siteurl'));
     $dom=str_ireplace('http://','',$dom);
-    echo '<a href="http://savitov.ru/ELSA/update/'.$b.'/'.$c.'/'.$dom.'/last">'._('Скачать обновление','ELSAGR').'</a>';
+    echo '<a href="http://savitov.ru/ELSA/update/'.$b.'/'.$c.'/'.$dom.'/last">'.__('Скачать обновление','ELSAGR').'</a>';
     return false;
     }
   }
@@ -222,7 +231,7 @@ function elsa_footer()
   global $_wopt;
     if ($_wopt['elsa-opt-setlinks']['b']=='site footer' || $_wopt['elsa-opt-setlinks']['b']=='footer')
       {
-       echo $a.'<div id="elsagrsitefooter"  style="font-size:9px; text-align:center"><a target=_blank href="http://savitov.ru/razdel/elsa/">'._('Работает ELSA','ELSAGR').'</a></div>';
+       echo $a.'<div id="elsagrsitefooter"  style="font-size:9px; text-align:center"><a target=_blank href="http://savitov.ru/ELSAGR/">'.__('Работает ELSA','ELSAGR').'</a></div>';
 
       }
   }
@@ -246,7 +255,7 @@ function elsagrImportTaskFromFile($a)
   $ret['r']=false;
      $ff=file(__wDir__.$a);
      $arr=unserialize(implode('',$ff));
-      if (empty($arr)){$ret['m']=_('Ошибка импорта <br/>Входящие данные не валидны','ELSAGR'); return $ret;}
+      if (empty($arr)){$ret['m']=__('Ошибка импорта <br/>Входящие данные не валидны','ELSAGR'); return $ret;}
   $T=new elsa_task();
   $out='';
       foreach ($arr as $t)
@@ -254,11 +263,11 @@ function elsagrImportTaskFromFile($a)
         if ($T->addNewTask($t))
           {
           $ret['r']=true;
-          $out.=_('Успешно импортировно задание: ','ELSAGR').$t['name'].'<br>';
+          $out.=__('Успешно импортировно задание: ','ELSAGR').$t['name'].'<br>';
           }
         else
           {
-          $out.=_('Ошибка при импорте задания: ','ELSAGR').$t['name'].'<br>';
+          $out.=__('Ошибка при импорте задания: ','ELSAGR').$t['name'].'<br>';
           }
         }
   $ret['m']=$out;
@@ -300,14 +309,14 @@ function elsagr_activation()
   add_option( 'elsa-opt-imgurl', '', '', 'yes' );
   add_option( 'elsa-opt-setlinks', 'site footer', '', 'yes' );
   add_option( 'elsa-opt-timelimit', '0', '', 'yes' );
-  add_option( 'elsa-opt-version', '4.0.1', '', 'yes' );
+  add_option( 'elsa-opt-version', '4.0.2', '', 'yes' );
   add_option( 'elsa-opt-lang', 'ru', '', 'yes' );
   add_option( 'elsa-opt-lasttryupd', '', '', 'yes' );
   
 
     global $wpdb;
     
-  $tn=$wpdb->prefix.'ElsaGrTask';
+  $tn=$wpdb->prefix.'elsagrtask';
   $sql = "CREATE TABLE $tn (
   id mediumint(9) NOT NULL AUTO_INCREMENT,
   name VARCHAR(255) DEFAULT 'unnamed' NOT NULL,
@@ -335,7 +344,7 @@ function elsagr_deactivation()
   delete_option('elsa-opt-lang');
   delete_option('elsa-opt-lasttryupd');
   global $wpdb;
-  $tn=$wpdb->prefix.'ElsaGrTask';
+  $tn=$wpdb->prefix.'elsagrtask';
   $wpdb->query("DROP TABLE $tn");
   }
 ?>

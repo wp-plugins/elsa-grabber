@@ -1,3 +1,3 @@
 <?php
-_e('<a href="http://savitov.ru/spisok-funkcij.html" target=_blank>Справочник по функциям плагина</a>','ELSAGR');
+_e('<a href="http://savitov.ru/ELSAGR/" target=_blank>Справочник по функциям плагина</a>','ELSAGR');
 ?>

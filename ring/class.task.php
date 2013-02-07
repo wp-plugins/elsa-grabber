@@ -43,17 +43,17 @@ require_once('load.php');
         {
         $out.='<div id="elsagr_task"><ul>';
           $out.='<li class="elsagrMW400">'.$line['name'].'</li>';
-          $out.='<li class="elsagrMW35"><a href="javascript:void(0)" onclick="elsagrTestTask(\''.$line['id'].'\')"><img src="'.__wUrl__.'rs/test.png" title="'._('Тестировать','ELSAGR').'"></a></li>';
+          $out.='<li class="elsagrMW35"><a href="javascript:void(0)" onclick="elsagrTestTask(\''.$line['id'].'\')"><img src="'.__wUrl__.'rs/test.png" title="'.__('Тестировать','ELSAGR').'"></a></li>';
            if ($line['action']=='on' || $line['action']=='yes' || $line['action']=='1' || $line['action']==1)
             {
-            $out.='<li class="elsagrMW35"><a href="javascript:void(0)" onclick="elsagrActTask(\''.$line['id'].'\',\'off\')"><img src="'.__wUrl__.'rs/acoff.png" title="'._('Выключить','ELSAGR').'"></a></li>';
+            $out.='<li class="elsagrMW35"><a href="javascript:void(0)" onclick="elsagrActTask(\''.$line['id'].'\',\'off\')"><img src="'.__wUrl__.'rs/acoff.png" title="'.__('Выключить','ELSAGR').'"></a></li>';
             }
            else
             {
-            $out.='<li class="elsagrMW35"><a href="javascript:void(0)" onclick="elsagrActTask(\''.$line['id'].'\',\'on\')"><img src="'.__wUrl__.'rs/acon.png" title="'._('Включить','ELSAGR').'"></a></li>';
+            $out.='<li class="elsagrMW35"><a href="javascript:void(0)" onclick="elsagrActTask(\''.$line['id'].'\',\'on\')"><img src="'.__wUrl__.'rs/acon.png" title="'.__('Включить','ELSAGR').'"></a></li>';
             }
-          $out.='<li class="elsagrMW35"><a href="javascript:void(0)" onclick="elsagrEditTask(\''.$line['id'].'\')"><img src="'.__wUrl__.'rs/edit.png" title="'._('Изменить','ELSAGR').'"></a></li>';
-          $out.='<li class="elsagrMW35"><a href="javascript:void(0)" onclick="elsagrDelTask(\''.$line['id'].'\')"><img src="'.__wUrl__.'rs/del.png" title="'._('Удалить','ELSAGR').'"></a></li>';
+          $out.='<li class="elsagrMW35"><a href="javascript:void(0)" onclick="elsagrEditTask(\''.$line['id'].'\')"><img src="'.__wUrl__.'rs/edit.png" title="'.__('Изменить','ELSAGR').'"></a></li>';
+          $out.='<li class="elsagrMW35"><a href="javascript:void(0)" onclick="elsagrDelTask(\''.$line['id'].'\')"><img src="'.__wUrl__.'rs/del.png" title="'.__('Удалить','ELSAGR').'"></a></li>';
         $out.='</ul></div>';
         }
       return $out;

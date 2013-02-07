@@ -13,12 +13,12 @@
       $mufn=$ex[sizeof($ex)-1];
       if (empty($v['name']))
         {
-        echo '<script type="text/javascript">elsagrShowMessage("'._('Передан пустой файл','ELSAGR').'");</script>';
+        echo '<script type="text/javascript">elsagrShowMessage("'.__('Передан пустой файл','ELSAGR').'");</script>';
         break;
         }
       if ($mufn!='zip' && $mufn!='txt')
         {
-        echo '<script type="text/javascript">elsagrShowMessage("'._('Неподдерживаемый формат файла','ELSAGR').'");</script>';
+        echo '<script type="text/javascript">elsagrShowMessage("'.__('Неподдерживаемый формат файла','ELSAGR').'");</script>';
         break;
         }
       if (@move_uploaded_file($v['tmp_name'], __wDir__.'export/'.basename($v['tmp_name']).'.'.$mufn))
@@ -31,7 +31,7 @@
                 if (is_dir(__wDir__.'export/'.basename($v['tmp_name']).'/')){elsagrRmdir(__wDir__.'export/'.basename($v['tmp_name']).'/');}
                 if (!mkdir(__wDir__.'export/'.basename($v['tmp_name']).'/'))
                   {
-                    echo '<script type="text/javascript">elsagrShowMessage("'._('Ошибка! <br/>не могу распаковать архив','ELSAGR').'");</script>';
+                    echo '<script type="text/javascript">elsagrShowMessage("'.__('Ошибка! <br/>не могу распаковать архив','ELSAGR').'");</script>';
                     break;
                   }
                 $zip->extractTo(__wDir__.'export/'.basename($v['tmp_name']).'/');
@@ -56,7 +56,7 @@
               }
             else
               {
-              echo '<script type="text/javascript">elsagrShowMessage("'._('Ошибка! <br/>не могу распаковать архив','ELSAGR').'");</script>';
+              echo '<script type="text/javascript">elsagrShowMessage("'.__('Ошибка! <br/>не могу распаковать архив','ELSAGR').'");</script>';
               break;
               }
 
@@ -64,7 +64,7 @@
         }
       else
         {
-        echo '<script type="text/javascript">elsagrShowMessage("'._('Папка export не найдена или недоступна для записи','ELSAGR').'");</script>';
+        echo '<script type="text/javascript">elsagrShowMessage("'.__('Папка export не найдена или недоступна для записи','ELSAGR').'");</script>';
         break;
         }
     }

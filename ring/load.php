@@ -4,7 +4,7 @@
    define (__wDir__,WP_PLUGIN_DIR.'/elsa-grabber/');
    define (__wUrl__,WP_PLUGIN_URL.'/elsa-grabber/');
 
-   define (__tTask__,$wpdb->prefix.'ElsaGrTask');
+   define (__tTask__,$wpdb->prefix.'elsagrtask');
 
 
 
@@ -16,16 +16,16 @@
 
 
  $_wa = array (
-              'elsa-opt-domen'=>array('a'=>1,'b'=>'','d'=>_('Домен, на который выдан ключ','ELSAGR')),
-              'elsa-opt-key'=>array('a'=>1,'b'=>'','d'=>_('Ключ плагина','ELSAGR')),
-              'elsa-opt-jquery'=>array('a'=>1,'b'=>'','d'=>_('Подключать jQuery','ELSAGR')),
-              'elsa-opt-imgdir'=>array('a'=>1,'b'=>'','d'=>_('Папка для загрузок','ELSAGR')),
-              'elsa-opt-imgurl'=>array('a'=>1,'b'=>'','d'=>_('Урл к папке с загрузками','ELSAGR')),
-              'elsa-opt-setlinks'=>array('a'=>1,'b'=>'','d'=>_('Куда прописывать линки на плагин','ELSAGR')),
-              'elsa-opt-timelimit'=>array('a'=>1,'b'=>'','d'=>_('Максимальное время выполнения','ELSAGR')),
-              'elsa-opt-version'=>array('a'=>0,'b'=>'4.0.1','d'=>_('Текущая версия плагина','ELSAGR')),
-              'elsa-opt-lang'=>array('a'=>1,'b'=>'en','d'=>_('Язык','ELSAGR')),
-              'elsa-opt-lasttryupd'=>array('a'=>0,'b'=>'','d'=>_('Последний запрос обновлений','ELSAGR'))
+              'elsa-opt-domen'=>array('a'=>1,'b'=>'','d'=>__('Домен, на который выдан ключ','ELSAGR')),
+              'elsa-opt-key'=>array('a'=>1,'b'=>'','d'=>__('Ключ плагина','ELSAGR')),
+              'elsa-opt-jquery'=>array('a'=>1,'b'=>'','d'=>__('Подключать jQuery','ELSAGR')),
+              'elsa-opt-imgdir'=>array('a'=>1,'b'=>'','d'=>__('Папка для загрузок','ELSAGR')),
+              'elsa-opt-imgurl'=>array('a'=>1,'b'=>'','d'=>__('Урл к папке с загрузками','ELSAGR')),
+              'elsa-opt-setlinks'=>array('a'=>1,'b'=>'','d'=>__('Куда прописывать линки на плагин','ELSAGR')),
+              'elsa-opt-timelimit'=>array('a'=>1,'b'=>'','d'=>__('Максимальное время выполнения','ELSAGR')),
+              'elsa-opt-version'=>array('a'=>0,'b'=>'4.0.1','d'=>__('Текущая версия плагина','ELSAGR')),
+              'elsa-opt-lang'=>array('a'=>1,'b'=>'en','d'=>__('Язык','ELSAGR')),
+              'elsa-opt-lasttryupd'=>array('a'=>0,'b'=>'','d'=>__('Последний запрос обновлений','ELSAGR'))
 
 
               );

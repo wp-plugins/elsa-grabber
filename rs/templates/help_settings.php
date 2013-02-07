@@ -49,7 +49,7 @@
                </ul>
               <br />
                Если вы используете данный плагин, но не покупаете его платную версию, пожалуйста, указывайте ссылки на сайт плагина.<br />
-               Пример ссылки - it is inserted <a href="http://savitov.ru/razdel/elsa/">ElSa</a>
+               Пример ссылки - it is inserted <a href="http://savitov.ru/ELSAGR/">ElSa</a>
               </span> <br/>
 
 

@@ -1,5 +1,5 @@
 <?php
-require_once($_SERVER['DOCUMENT_ROOT'].'/wp-load.php');
+require_once('../../../../wp-load.php');
 
     $p=new elsa_parser();
     $t= new elsa_task();
@@ -66,14 +66,14 @@ require_once($_SERVER['DOCUMENT_ROOT'].'/wp-load.php');
 
      if (!empty($error))
       {
-        echo '<h2>'._('Проблемы в тексте задания','ELSAGR').'</h2>';     //you have a problem with text task
+        echo '<h2>'.__('Проблемы в тексте задания','ELSAGR').'</h2>';     //you have a problem with text task
       }
      else
       {
 
       if (empty($res[0]['_TESTRESULT_']))
         {
-        echo '<h2>'._('Возвращен нулевой результат','ELSAGR').'</h2>';
+        echo '<h2>'.__('Возвращен нулевой результат','ELSAGR').'</h2>';
         }
 
       else
@@ -108,13 +108,13 @@ require_once($_SERVER['DOCUMENT_ROOT'].'/wp-load.php');
    <?php
      if (!empty($error))
       {
-        echo '<h2>'._('Проблемы в тексте задания','ELSAGR').'</h2>';
+        echo '<h2>'.__('Проблемы в тексте задания','ELSAGR').'</h2>';
       }
      else{
 
      if (empty($res[0]['_TESTRESULT_']))
       {
-       echo '<h2>'._('Возвращен нулевой результат','ELSAGR').'</h2>';
+       echo '<h2>'.__('Возвращен нулевой результат','ELSAGR').'</h2>';
       }else{
      foreach($res[0]['_TESTRESULT_'] as $k=>$v)
       {
@@ -160,7 +160,7 @@ require_once($_SERVER['DOCUMENT_ROOT'].'/wp-load.php');
   <div id="elsagrTWtext" class="elsagrTWtext5">
    <?php
 
-     if (empty($error)){echo "<h2>"._('Проблемных директив не выявленно','ELSAGR')."</h2>";}
+     if (empty($error)){echo "<h2>".__('Проблемных директив не выявленно','ELSAGR')."</h2>";}
       echo '<xmp>';
       $ex=explode("\n",$task['task']);
       $ex1=array();

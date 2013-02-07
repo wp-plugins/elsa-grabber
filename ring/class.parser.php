@@ -69,17 +69,17 @@
            if ($func_data[strlen($func_data)-1]==')'){$func_data=trim(substr($func_data,0,strlen($func_data)-1));}
            $b[$a]['_analiz']['_FUNC']=$func;
            $b[$a]['_analiz']['_RAWDATA']=$func_data;
-           if (empty($func)){$b[$a]['_error']['_FUNC']=_('Пустое имя функции','ELSAGR');}
-           if (empty($func_data)){$b[$a]['_error']['_RAWDATA']=_('Не переданы данные для функции ','ELSAGR');}
+           if (empty($func)){$b[$a]['_error']['_FUNC']=__('Пустое имя функции','ELSAGR');}
+           if (empty($func_data)){$b[$a]['_error']['_RAWDATA']=__('Не переданы данные для функции ','ELSAGR');}
            if ($func=='get')
             {
               if (empty($_wopt['elsa-opt-imgdir']['b']))
                 {
-                $b[$a]['_error']['_FUNC']=_('Директория для файлов не установлена. <br/>Задания не может быть выполнено','ELSAGR');
+                $b[$a]['_error']['_FUNC']=__('Директория для файлов не установлена. <br/>Задания не может быть выполнено','ELSAGR');
                 }
               if (empty($_wopt['elsa-opt-imgurl']['b']))
                 {
-                $b[$a]['_error']['_FUNC']=_('Ссылка на директорию файлов не установлена. <br/>Задания не может быть выполнено','ELSAGR');
+                $b[$a]['_error']['_FUNC']=__('Ссылка на директорию файлов не установлена. <br/>Задания не может быть выполнено','ELSAGR');
                 }
             }
            $functext=$b[$a]['_analiz']['_FUNC'];
@@ -87,14 +87,14 @@
             {
               if (!method_exists($this,'__c_'.$functext))
                 {
-                $b[$a]['_error']['_FUNC_exists']=_('Не найдена функция ','ELSAGR').'"'.$functext.'"';
+                $b[$a]['_error']['_FUNC_exists']=__('Не найдена функция ','ELSAGR').'"'.$functext.'"';
                 }
             }
           else
             {
               if (!method_exists($this,'__'.$functext))
                 {
-                $b[$a]['_error']['_FUNC_exists']=_('Не найдена функция ','ELSAGR').'"'.$functext.'"';
+                $b[$a]['_error']['_FUNC_exists']=__('Не найдена функция ','ELSAGR').'"'.$functext.'"';
                 }
             }
           $ex=explode(',',$func_data);
@@ -121,7 +121,7 @@
             }
          if (!method_exists($this,$func))
           {
-            $b[$a['_id']]['_error']['_FUNC']=_('Не найден метод ','ELSAGR').$func;
+            $b[$a['_id']]['_error']['_FUNC']=__('Не найден метод ','ELSAGR').$func;
             return false;
           }
          $func=strtolower($func);
@@ -289,12 +289,12 @@
                   if ($c)
                     {
                      $this->W[$k][$a]=$pp;
-                     $this->W[$k]['_TESTRESULT_']['ERROR']=_('Пост не может быть вставлен потому что текст менее 250 символов ','ELSAGR');
+                     $this->W[$k]['_TESTRESULT_']['ERROR']=__('Пост не может быть вставлен потому что текст менее 250 символов ','ELSAGR');
                     }
                   else
                     {
                       $this->W[$k][$a]=$pp;
-                      $this->W[$k]['_RESULTS']=_('Пост не может быть вставлен потому что текст менее 250 символов ','ELSAGR');
+                      $this->W[$k]['_RESULTS']=__('Пост не может быть вставлен потому что текст менее 250 символов ','ELSAGR');
                     }
                 continue;
                 }
@@ -317,7 +317,7 @@
               } // switch
               if ($L['h'] && $L['w']=='before')
                 {
-                $pp[5]=_('Писатель ','ELSAGR').' <a href="http://savitov.ru/elsa/">ElSa</a><br /><br />'.$pp[5];
+                $pp[5]=__('Писатель ','ELSAGR').' <a href="http://savitov.ru/ELSAGR/">ElSa</a><br /><br />'.$pp[5];
                 }
             $post = array(
               'post_title' => trim($pp[0]),
@@ -331,7 +331,7 @@
               'post_status' => 'publish');
               if ($L['h'] && $L['w']=='after')
                 {
-                $pp[5]=$pp[5].'<br><br>'._('Писатель ','ELSAGR').'<a href="http://savitov.ru/elsa/">ElSa</a><br/><br/>';
+                $pp[5]=$pp[5].'<br><br>'.__('Писатель ','ELSAGR').'<a href="http://savitov.ru/ELSAGR/">ElSa</a><br/><br/>';
                 }
           $testtitle=trim($pp[0]);
           
@@ -341,7 +341,7 @@
           if (empty($havepost) && !$c)
             {
              $new=wp_insert_post($post,$wp_error);
-             $this->W[$k]['_RESULTS']=_('Пост размещен','ELSAGR');
+             $this->W[$k]['_RESULTS']=__('Пост размещен','ELSAGR');
 
             }
            $this->W[$k][$a]=$pp;

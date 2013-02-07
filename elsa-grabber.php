@@ -27,9 +27,9 @@ function elsaShowUpd()
 function elsa_menu()
   {
   $newnemu=add_menu_page('ELSA grabber','ELSA grabber',10,'elsa-grabber/elsa-grabber.php','elsa_opt');
-  add_submenu_page('elsa-grabber/elsa-grabber.php', _('Задания','ELSAGR'), _('Задания','ELSAGR'),10,'elsa-task.php','elsaShowTask');
-  add_submenu_page('elsa-grabber/elsa-grabber.php', _('Параметры','ELSAGR'), _('Параметры','ELSAGR'),10,'elsa-options.php','elsaShowOpt');
-  add_submenu_page('elsa-grabber/elsa-grabber.php', _('Обновление','ELSAGR'), _('Обновление','ELSAGR'),10,'elsa-update.php','elsaShowUpd');
+  add_submenu_page('elsa-grabber/elsa-grabber.php', __('Задания','ELSAGR'), __('Задания','ELSAGR'),10,'elsa-task.php','elsaShowTask');
+  add_submenu_page('elsa-grabber/elsa-grabber.php', __('Параметры','ELSAGR'), __('Параметры','ELSAGR'),10,'elsa-options.php','elsaShowOpt');
+  add_submenu_page('elsa-grabber/elsa-grabber.php', __('Обновление','ELSAGR'), __('Обновление','ELSAGR'),10,'elsa-update.php','elsaShowUpd');
   }
 add_action('admin_menu', 'elsa_menu');
 add_action('init', 'elsagrloadlang');

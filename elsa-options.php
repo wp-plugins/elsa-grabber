@@ -21,7 +21,7 @@
             $out.='</div>';
             }
           }
-        $out.='<br /><button class="elsagrbutton button-primary" onclick=elsagrSaveparam()>'._('Сохранить','ELSAGR').'</button>';
+        $out.='<br /><button class="elsagrbutton button-primary" onclick=elsagrSaveparam()>'.__('Сохранить','ELSAGR').'</button>';
         echo $out;
         ?>
        <br /><br />

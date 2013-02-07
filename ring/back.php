@@ -3,7 +3,7 @@ if (isset($_REQUEST['f']))
   {
   if (function_exists($_REQUEST['f']))
     {
-    require_once($_SERVER['DOCUMENT_ROOT'].'/wp-load.php');
+    require_once('../../../../wp-load.php');
     $func = $_REQUEST['f'];
       $func($_REQUEST);
     }
@@ -82,7 +82,7 @@ function elsagrRemoteTask($a)
     $res=unserialize(implode('',$f));
     if (sizeof($res)==0 || $res===false || !is_array($res))
       {
-      echo _('Ничего не найдено','ELSAGR');
+      echo __('Ничего не найдено','ELSAGR');
       return false;
       }
     $out='';
@@ -98,7 +98,7 @@ function elsagrGetRemoteTask($a)
   global $_wopt;
   $f=file('http://savitov.ru/ELSA/remotetask/files.php?f='.$a['id'].'&s='.$_SERVER['SERVER_NAME'].'&k='.$_wopt['elsa-opt-key']['b'].'&d='.$_wopt['elsa-opt-domen']['b']);
   echo nl2br(implode('',$f));
-  echo '<br><a href="javascript:void(0)" onclick="elsagr_copytask('.$a['id'].')">'._('Добавить к моим заданиям','ELSAGR').'</a>';
+  echo '<br><a href="javascript:void(0)" onclick="elsagr_copytask('.$a['id'].')">'.__('Добавить к моим заданиям','ELSAGR').'</a>';
   }
 function elsagrGetRemoteTaskFC($a)
   {
@@ -153,13 +153,13 @@ function elsagrExportTask($a)
         }
       else
         {
-        echo _('Ошибка экспорта:<br/> ','ELSAGR').$openzip;
+        echo __('Ошибка экспорта:<br/> ','ELSAGR').$openzip;
         }
         
     }
   else
     {
-    echo _('Папка export не доступна для записи. Експорт невозможен<br /> Установите для папки export права на запись','ELSAGR');
+    echo __('Папка export не доступна для записи. Експорт невозможен<br /> Установите для папки export права на запись','ELSAGR');
     }
   }
 ?>
