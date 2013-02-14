@@ -3,10 +3,10 @@ Contributors: Elchesav
 Tags: grabber, ElSa grabber, RSS, RSS grabber, post, posts, auto poster, plugin, RSS parser, grabber, parser html, autoposter, auto publisher
 Requires at least: 2.8
 Tested up to: 3.5
-Stable tag: 4.0.2
+Stable tag: 4.0.3
 
 The given plug-in copies materials from other sites.<br />
-For more information search on http://savitov.ru/ELSAGR/
+More information search on http://savitov.ru/ELSAGR/
 
 == Description ==
 
@@ -57,6 +57,9 @@ RU
 3. Set settings in the menu parameters
 
 == Changelog ==
+= 4.0.3 =
+* All information on http://savitov.ru/ELSAGR/
+
 = 4.0.2 =
 * All information on http://savitov.ru/ELSAGR/
 
