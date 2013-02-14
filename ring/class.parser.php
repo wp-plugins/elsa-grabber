@@ -439,9 +439,9 @@
       }
     function __c_replace($a,$b)
       {
-      if (is_array($b)){$c=$b[0];$nc=$b[1];$wh=$b[2];}
       foreach ($this->W as $k=>$v)
         {
+        if (is_array($b)){$c=$b[0];$nc=$b[1];$wh=$b[2];}
         if ($this->is_var($c)){$c=$this->W[$k][$c];}
         if ($this->is_var($nc)){$nc=$this->W[$k][$nc];}
         if ($this->is_var($wh)){$wh=$this->W[$k][$wh];}

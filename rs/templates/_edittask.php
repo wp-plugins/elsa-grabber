@@ -41,7 +41,7 @@ foreach ($data as $k=>$v)
 
 
 <div id="elsagr_tmplinp">
-<?=__('Период запуска','ELSAGR');?><br/>
+<?=__('Период запуска','ELSAGR');?> <div id="elsagrinfopict"><a href="http://savitov.ru/ELSAGR/?a=12" target=_blank><img src="<?=__wUrl__;?>/rs/info.png"></a></div><br/>
 <input type="text" value="<?=$data['time'];?>" id="add_time">
  </div>
  
@@ -49,7 +49,7 @@ foreach ($data as $k=>$v)
  
  
 <div id="elsagr_tmplinp">
-<?=__('Текст задания','ELSAGR');?><br/>
+<?=__('Текст задания','ELSAGR');?> <div id="elsagrinfopict"><a href="http://savitov.ru/ELSAGR/?a=2" target=_blank><img src="<?=__wUrl__;?>/rs/info.png"></a></div> <br/>
 <textarea id="add_task"><?=$data['task'];?></textarea>
  </div>
 
