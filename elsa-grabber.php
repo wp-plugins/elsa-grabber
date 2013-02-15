@@ -1,9 +1,9 @@
 <?php
 /*
 Plugin Name: ElSa-grabber
-Plugin URI: http://savitov.ru/razdel/elsa
+Plugin URI: http://savitov.ru/ELSAGR
 Description: Граббер RSS лент
-Version: 4.0.2
+Version: 4.0.3
 Author: Savitov
 Author URI: http://Savitov.ru
 */
