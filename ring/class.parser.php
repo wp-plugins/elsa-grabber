@@ -191,8 +191,8 @@
                 if (empty($content)){continue;} //!!!!
                 
 
-                
-             $content=$this->__clearHtml($content);
+             if (strpos($xpath,'comment')===false){
+             $content=$this->__clearHtml($content);}
              $content=$this->__repairHTML($content);
              $content=mb_convert_encoding($content, 'HTML-ENTITIES', 'utf-8');
 
