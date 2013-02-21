@@ -1,0 +1,745 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ELSA4\n"
+"POT-Creation-Date: 2013-01-28 03:58+0300\n"
+"PO-Revision-Date: 2013-01-28 03:58+0300\n"
+"Last-Translator: Kesha <Kesha@savitov.ru>\n"
+"Language-Team: iSavitov <kesha@savitov.ru>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;_e\n"
+"X-Poedit-Basepath: ../\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../elsa-grabber/elsa-grabber.php:30 ../elsa-grabber/elsa-task.php:74
+msgid "Задания"
+msgstr "Tasks"
+
+#: ../elsa-grabber/elsa-grabber.php:31 ../elsa-grabber/elsa-options.php:6
+#: ../elsa-grabber/rs/templates/_maintext.php:12
+#: ../elsa-grabber/rs/templates/_maintext.php:54
+msgid "Параметры"
+msgstr "settings"
+
+#: ../elsa-grabber/elsa-grabber.php:32 ../elsa-grabber/elsa-update.php:6
+msgid "Обновление"
+msgstr "updating"
+
+#: ../elsa-grabber/elsa-options.php:24
+#: ../elsa-grabber/rs/templates/_edittask.php:58
+msgid "Сохранить"
+msgstr "Save"
+
+#: ../elsa-grabber/elsa-options.php:29
+msgid "Критическая ошибка"
+msgstr "Critical mistake"
+
+#: ../elsa-grabber/elsa-options.php:30
+msgid "Не критическая ошибка"
+msgstr "Not critical mistake"
+
+#: ../elsa-grabber/elsa-task.php:16
+msgid "Передан пустой файл"
+msgstr "file is empty "
+
+#: ../elsa-grabber/elsa-task.php:21
+msgid "Неподдерживаемый формат файла"
+msgstr "Unsupported format of the file"
+
+#: ../elsa-grabber/elsa-task.php:34 ../elsa-grabber/elsa-task.php:59
+msgid "Ошибка! <br/>не могу распаковать архив"
+msgstr "Mistake! <br/> I can't unpack archive"
+
+#: ../elsa-grabber/elsa-task.php:67
+msgid "Папка export не найдена или недоступна для записи"
+msgstr "The export folder isn't found or inaccessible to record"
+
+#: ../elsa-grabber/elsa-task.php:77
+msgid "Добавить новое задание"
+msgstr "Add new task"
+
+#: ../elsa-grabber/elsa-task.php:78
+msgid "Каталог заданий"
+msgstr "Catalog of tasks"
+
+#: ../elsa-grabber/elsa-task.php:79
+msgid "Экспорт заданий"
+msgstr "Export of tasks"
+
+#: ../elsa-grabber/elsa-task.php:80
+msgid "Импорт заданий"
+msgstr "Import of tasks"
+
+#: ../elsa-grabber/elsa-update.php:10
+msgid "Проверить наличие обновления"
+msgstr "check update"
+
+#: ../elsa-grabber/elsa-update.php:14
+msgid ""
+"Проверка обновления может осуществляться не ранее чем через 2 суток после "
+"последней проверки"
+msgstr ""
+"Check of updating can be carried out not earlier than in 2 days after the "
+"last check"
+
+#: ../elsa-grabber/ring/back.php:85
+msgid "Ничего не найдено"
+msgstr "It is found nothing"
+
+#: ../elsa-grabber/ring/back.php:101
+msgid "Добавить к моим заданиям"
+msgstr "add to my tasks"
+
+#: ../elsa-grabber/ring/back.php:122
+msgid ""
+"Спасибо за пополенение каталога заданий<br>После проверки, задание станет "
+"доступно для установки"
+msgstr ""
+"Thanks for replenishment of the catalog of the tasks<br> After check, a task "
+"becomes available to installation"
+
+#: ../elsa-grabber/ring/back.php:126
+msgid ""
+"Ошибка передачи данных на сервер<br>Попробуйте повторить операцию позже."
+msgstr "Transmission error on the  server<br>Try to repeat operation later."
+
+#: ../elsa-grabber/ring/back.php:156
+msgid "Ошибка экспорта:<br/> "
+msgstr "Error of export: <br/> "
+
+#: ../elsa-grabber/ring/back.php:162
+msgid ""
+"Папка export не доступна для записи. Експорт невозможен<br /> Установите для "
+"папки export права на запись"
+msgstr ""
+"The export folder isn't available to record. Eksport is impossible <br /> "
+"Establish for the export folder of the right to record"
+
+#: ../elsa-grabber/ring/class.parser.php:72
+msgid "Пустое имя функции"
+msgstr "Empty name of function"
+
+#: ../elsa-grabber/ring/class.parser.php:73
+msgid "Не переданы данные для функции "
+msgstr "Empty data for function"
+
+#: ../elsa-grabber/ring/class.parser.php:78
+msgid ""
+"Директория для файлов не установлена. <br/>Задания не может быть выполнено"
+msgstr ""
+
+#: ../elsa-grabber/ring/class.parser.php:82
+msgid ""
+"Ссылка на директорию файлов не установлена. <br/>Задания не может быть "
+"выполнено"
+msgstr ""
+
+#: ../elsa-grabber/ring/class.parser.php:90
+#: ../elsa-grabber/ring/class.parser.php:97
+msgid "Не найдена функция "
+msgstr "Function not find"
+
+#: ../elsa-grabber/ring/class.parser.php:124
+msgid "Не найден метод "
+msgstr "It is found nothing"
+
+#: ../elsa-grabber/ring/class.parser.php:292
+#: ../elsa-grabber/ring/class.parser.php:297
+msgid "Пост не может быть вставлен потому что текст менее 250 символов "
+msgstr "The post can`t be insert cause he have less 250 chars"
+
+#: ../elsa-grabber/ring/class.parser.php:320
+#: ../elsa-grabber/ring/class.parser.php:334
+msgid "Писатель "
+msgstr "Writer"
+
+#: ../elsa-grabber/ring/class.parser.php:344
+msgid "Пост размещен"
+msgstr "Post are inserted"
+
+#: ../elsa-grabber/ring/class.task.php:46
+#: ../elsa-grabber/rs/templates/_addtask.php:50
+#: ../elsa-grabber/rs/templates/_edittask.php:59
+msgid "Тестировать"
+msgstr "Test"
+
+#: ../elsa-grabber/ring/class.task.php:49
+msgid "Выключить"
+msgstr "To connect jQuery"
+
+#: ../elsa-grabber/ring/class.task.php:53
+msgid "Включить"
+msgstr "To connect jQuery"
+
+#: ../elsa-grabber/ring/class.task.php:55
+msgid "Изменить"
+msgstr "Save"
+
+#: ../elsa-grabber/ring/class.task.php:56
+msgid "Удалить"
+msgstr "Delete"
+
+#: ../elsa-grabber/ring/function.php:45
+msgid "Укажите директорию, например - "
+msgstr ""
+
+#: ../elsa-grabber/ring/function.php:52
+msgid "Не могу найти директорию<br>Директория должна быть в "
+msgstr "I can't find a directory <br> the Directory has to be in"
+
+#: ../elsa-grabber/ring/function.php:58
+msgid "Не могу записывать в директорию "
+msgstr "I can't write in a directory"
+
+#: ../elsa-grabber/ring/function.php:84
+msgid ""
+"Вы уверены что установили правильное значение<br>Может быть вы хотели "
+"указать: "
+msgstr ""
+"You are sure that established the correct  value there <br>Can be you wanted "
+"to specify:"
+
+#: ../elsa-grabber/ring/function.php:94
+msgid "Должно быть число<br>Рекомендовано «0»"
+msgstr "The number  has to be<br> recommended \"0\""
+
+#: ../elsa-grabber/ring/function.php:105
+msgid ""
+"Должно быть одним из следующих значений: «none\",«post»,«after post»,«before "
+"post»,«site footer»"
+msgstr ""
+"Has to be one of the following values: \"none \", \"post\", \"after post\", "
+"\"before post\", \"site footer\""
+
+#: ../elsa-grabber/ring/function.php:117
+msgid "Должно быть одним из следующих значений: «yes»,«no»"
+msgstr "Has to be one of the following values: \"yes\", \"no\""
+
+#: ../elsa-grabber/ring/function.php:127 ../elsa-grabber/ring/function.php:137
+msgid "Вы должны зарегистрировать плагин "
+msgstr "You must to register a plug-in"
+
+#: ../elsa-grabber/ring/function.php:127 ../elsa-grabber/ring/function.php:137
+msgid "Читать как"
+msgstr "Read as"
+
+#: ../elsa-grabber/ring/function.php:149
+#, fuzzy
+msgid "Должно быть одним из следующих значений: «en»,«ru»"
+msgstr "Has to be one of the following values: \"yes\", \"no\""
+
+#: ../elsa-grabber/ring/function.php:208
+msgid "Вы используете последнюю версию"
+msgstr "You use the last version"
+
+#: ../elsa-grabber/ring/function.php:216
+msgid "Скачать обновление"
+msgstr "To download updating"
+
+#: ../elsa-grabber/ring/function.php:225
+msgid "Работает ELSA"
+msgstr "ELSA works"
+
+#: ../elsa-grabber/ring/function.php:249
+msgid "Ошибка импорта <br/>Входящие данные не валидны"
+msgstr "Error of import <br/>Entering data aren't valid"
+
+#: ../elsa-grabber/ring/function.php:257
+msgid "Успешно импортировно задание: "
+msgstr "Successfully importirovno task: "
+
+#: ../elsa-grabber/ring/function.php:261
+msgid "Ошибка при импорте задания: "
+msgstr "Mistake when importing task: "
+
+#: ../elsa-grabber/ring/load.php:19
+msgid "Домен, на который выдан ключ"
+msgstr "The domain on which the key is given out"
+
+#: ../elsa-grabber/ring/load.php:20
+msgid "Ключ плагина"
+msgstr "Plug-in key"
+
+#: ../elsa-grabber/ring/load.php:21
+msgid "Подключать jQuery"
+msgstr "To connect jQuery"
+
+#: ../elsa-grabber/ring/load.php:22
+msgid "Папка для загрузок"
+msgstr "The folder for loadings"
+
+#: ../elsa-grabber/ring/load.php:23
+msgid "Урл к папке с загрузками"
+msgstr "Url to the folder with loadings"
+
+#: ../elsa-grabber/ring/load.php:24
+msgid "Куда прописывать линки на плагин"
+msgstr "Where to register links on a plug-in"
+
+#: ../elsa-grabber/ring/load.php:25
+msgid "Максимальное время выполнения"
+msgstr "Maximum time of performance"
+
+#: ../elsa-grabber/ring/load.php:26
+msgid "Текущая версия плагина"
+msgstr "Current version of a plug-in"
+
+#: ../elsa-grabber/ring/load.php:27
+msgid "Язык"
+msgstr ""
+
+#: ../elsa-grabber/ring/load.php:28
+msgid "Последний запрос обновлений"
+msgstr "Last inquiry of updatings"
+
+#: ../elsa-grabber/rs/templates/help_about_plugin.php:1
+msgid ""
+"Плагин позволяет извлекать информацию из RSS лент сайтов и вставлять ее как "
+"отдельные посты на блог где он работает. Начиная с версии\n"
+"1.0.5 кроме извлечения данных их RSS лент, плагин научился парсить HTML код "
+"страничек, что бы извлекать полные тексты новостей, а так же\n"
+"дополнительные элементы, такие как изображения.\n"
+"<br />На данный момент список функций плагина достаточно <a href=\"#b"
+"\">велик</a>, что позволяет настроить его под любые свои нужды.\n"
+"\n"
+"<br /><br /><br />\n"
+"\n"
+"<b>Требования плагина для корректной работы</b>\n"
+" <ul>\n"
+" <li>PHP5</li>\n"
+" <li>MySQL5  и выше</li>\n"
+" <li>Библиотека php <a href=\"http://php.net/manual/en/book.tidy.php\">tidy</"
+"a></li>\n"
+" <li>Библиотека php <a href=\"http://php.net/manual/en/book.curl.php\">curl</"
+"a></li>\n"
+" <li>Доступ к настройке в php.ini параметра <a href=\"http://php.net/manual/"
+"ru/filesystem.configuration.php#ini.allow-url-fopen\">allow_url_fopen</a></"
+"li>\n"
+"\n"
+" </ul>\n"
+"<br /><br />\n"
+"<b>Внимание!</b><br />\n"
+"Перед покупкой ключа плагина удостоверьтесь, что выше изложенные возможности "
+"есть в вашем распоряжении иначе, я не гарантирую\n"
+"работоспособность плагина. Если вы сомневаетесь или не знаете как проверить "
+"требования, то установите себе бесплатную версию плагина\n"
+"и проверьте ее работоспособность. Если бесплатная версия будет работать то с "
+"большой долей вероятности и платная версия будет\n"
+"работоспособна на вашем оборудовании."
+msgstr ""
+
+#: ../elsa-grabber/rs/templates/help_buykey.php:2
+msgid ""
+"<b>Различия в версиях плагина</b><br>\n"
+"Для бесплатной версии плагина <u>не доступна</u> возможность обновления."
+"<br>\n"
+"Для бесплатной версии плагина <u>не доступен</u> каталог заданий.<br>\n"
+"Для бесплатной версии плагина <u>не доступена</u> тех. поддержка.<br>\n"
+"Для бесплатной версии плагина <u>не доступена</u> возможность заказа нового "
+"функционала.<br>\n"
+"<br><br>\n"
+"\n"
+"Стоимость ключа плагина <b>60 $</b><br>\n"
+"Ключ действует на 2 домена <br>\n"
+"Для того, что купить ключ вам нужно написать мне письмо по электронной почте "
+"в котором нужно указать желаемый способ оплаты,\n"
+"количество необходимых ключей и список доменов для этих ключей.<br>\n"
+"В ответ вы получите письмо с данными для перевода и после подтверждения его "
+"я вышлю вам заказанные ключи."
+msgstr ""
+
+#: ../elsa-grabber/rs/templates/help_devel.php:2
+msgid ""
+"Разработчик &mdash; <a href=\"http://savitov.ru\">Иннокентий Савитов</a>, "
+"Россия <br />E-mail &mdash; <a href=\"mailto:kesha@savitov.ru"
+"\">kesha@savitov.ru</a> <br />"
+msgstr ""
+
+#: ../elsa-grabber/rs/templates/help_docs.php:2
+msgid ""
+"<a href=\"http://savitov.ru/elsa-function.html\" target=_blank>Справочник по "
+"функциям плагина</a>"
+msgstr ""
+
+#: ../elsa-grabber/rs/templates/help_faq.php:1
+msgid ""
+"<b>Сейчас мне нужен ключ на один домен, смогу ли я потом использовать его "
+"для второго домена?</b><br />\n"
+"    <span class=\"elsagrinner\">\n"
+"     Этот же ключ не подойдет. Вам нужно будет связаться со мной, что бы я "
+"сгенерировал вам новый ключ. Эта процедура бесплатна.\n"
+"    </span> <br /><br />\n"
+"<b>Могу ли я поменять домены ключа?</b><br />\n"
+"   <span class=\"elsagrinner\">\n"
+"    Да можете, но для каждого ключа возможна смена доменов максимум 3 раза.\n"
+"   </span> <br /><br />\n"
+"<b>Мне нужен ключ на три домена!</b><br />\n"
+"    <span class=\"elsagrinner\">\n"
+"    Тогда вам нужно купить два ключа\n"
+"    </span><br /><br />\n"
+"<b>Есть ли скидки при покупке нескольких ключей?</b><br />\n"
+"    <span class=\"elsagrinner\">\n"
+"    Да. Действуют следующие накопительные скидки:\n"
+"      <ul>\n"
+"        <li> Более 5 ключей &mdash; 10%  на каждый следующий ключ</li>\n"
+"        <li> Более 10 ключей &mdash; 15% на каждый следующий ключ</li>\n"
+"        <li> Более 20 ключей &mdash; 25% на каждый следующий ключ</li>\n"
+"        <li> Более 50 ключей &mdash; 50% на каждый следующий ключ</li>\n"
+"      </ul>\n"
+"     Внимание!<br />\n"
+"     Для возможности использования данных скидок, вам нужно сохранить ваш "
+"личный идентификационный номер который вы получите при покупке первого "
+"ключа.\n"
+"    </span><br /><br />\n"
+"<b>Осуществляете ли вы тех. поддержку пользователей?</b>  <br />\n"
+"<span class=\"elsagrinner\">\n"
+"Да, для покупателей ключей я предоставляю такую услугу.<br />  <br />\n"
+"Техническая поддержка пользователей осуществляется на всем протяжении "
+"поддержки плагина разработчиком.\n"
+"Условия предоставления технической поддержки:\n"
+"   <ul>\n"
+"    <li>Техническая поддержка осуществляется ТОЛЬКО! по e-mail "
+"(kesha@savitov.ru)</li>\n"
+"    <li>В сферу действия тех. поддержки не входят вопросы составления "
+"задания. Исключения составляют случаи когда функция описанная в офф. "
+"документации работает некорректно</li>\n"
+"    <li>Время обработки заявки составляет до 24 рабочих часов.</li>\n"
+"    <li>Решение технической проблемы составляет до 72 рабочих часов.</li>\n"
+"    <li>Техническая поддержка не осуществляется по телефону, ICQ, Skype и пр."
+"</li>\n"
+"    <li>Я оставляю за собой право отказать в тех. поддержке в случаях "
+"нарушения корректного общения.</li>\n"
+"  </ul>\n"
+"  </span> <br /><br />\n"
+"\n"
+"<b>Поддомены третьего уровня трактуются как отдельные сайты?</b>  <br />\n"
+"<span class=\"elsagrinner\">\n"
+"Нет. Ключ выдается только для домена 2 уровня (site.ru), поддомены основного "
+"домена считаются тем же сайтом, в не зависимости от количества поддоменов на "
+"них.\n"
+" </span> <br /><br />"
+msgstr ""
+
+#: ../elsa-grabber/rs/templates/help_from_devel.php:1
+msgid ""
+"Спасибо что используете данный плагин. Надеюсь, он помогает вам в ваших "
+"каждодневных заботах о ваших сайтах.\n"
+"<br>Если вы берете информацию с чужих сайтов с помощью данного плагина, "
+"ставьте ссылки на источник. Это не только правильно\n"
+" с точки зрения человеческих взаимоотношений, но так же поощряется со "
+"стороны поисковиков.\n"
+"Мои опыты показывают, что там где я проставлял ссылки на источник "
+"информации, проблем с индексацией никогда не было, чего не скажешь\n"
+" о тех сайтах где я этого не делал.\n"
+"<br>Весь необходимый набор инструментов для реализации этого есть, в разделе "
+"<a href=\"#b\">документы</a> вы найдете примеры как это сделать."
+msgstr ""
+
+#: ../elsa-grabber/rs/templates/help_lic.php:1
+msgid ""
+"<b>Условия выдачи ключей</b><br />\n"
+" <ul>\n"
+"    <li>Ключи выдаются пользователю после полной оплаты стоимости заказанных "
+"ключей.</li>\n"
+"    <li>Ключи привязываются к e-mail адресу пользователя.</li>\n"
+"    <li>Факт покупки ключа дает право на бесплатную техническую поддержку в "
+"оговоренных рамках.</li>\n"
+" </ul><br />\n"
+"\n"
+"\n"
+"<b>Лицензия и ограничение ответственности:</b> <br />\n"
+"\n"
+"<br />ДАННОЕ ПРОГРАММНОЕ ОБЕСПЕЧЕНИЕ ПРЕДОСТАВЛЯЕТСЯ «КАК ЕСТЬ», БЕЗ КАКИХ-"
+"ЛИБО ГАРАНТИЙ, ЯВНО ВЫРАЖЕННЫХ ИЛИ ПОДРАЗУМЕВАЕМЫХ, ВКЛЮЧАЯ, НО НЕ "
+"ОГРАНИЧИВАЯСЬ ГАРАНТИЯМИ ТОВАРНОЙ ПРИГОДНОСТИ, СООТВЕТСТВИЯ ПО ЕГО "
+"КОНКРЕТНОМУ НАЗНАЧЕНИЮ И ОТСУТСТВИЯ НАРУШЕНИЙ ПРАВ. НИ В КАКОМ СЛУЧАЕ АВТОРЫ "
+"ИЛИ ПРАВООБЛАДАТЕЛИ НЕ НЕСУТ ОТВЕТСТВЕННОСТИ ПО ИСКАМ О ВОЗМЕЩЕНИИ УЩЕРБА, "
+"УБЫТКОВ ИЛИ ДРУГИХ ТРЕБОВАНИЙ ПО ДЕЙСТВУЮЩИМ КОНТРАКТАМ, ДЕЛИКТАМ ИЛИ ИНОМУ, "
+"ВОЗНИКШИМ ИЗ, ИМЕЮЩИМ ПРИЧИНОЙ ИЛИ СВЯЗАННЫМ С ПРОГРАММНЫМ ОБЕСПЕЧЕНИЕМ ИЛИ "
+"ИСПОЛЬЗОВАНИЕМ ПРОГРАММНОГО ОБЕСПЕЧЕНИЯ ИЛИ ИНЫМИ ДЕЙСТВИЯМИ С ПРОГРАММНЫМ "
+"ОБЕСПЕЧЕНИЕМ.\n"
+"<br />Однако, на момент продажи ключа, я гарантирую работоспособность "
+"плагина для версии WP 3.5.\n"
+"<br />Обновления плагина в рамках текущей мажорной версии предоставляются "
+"бесплатно.\n"
+"<br />Работоспособность плагина гарантируется при точном соответствии <a "
+"href=\"#a\">требований плагина</a>.\n"
+"<br /><br />\n"
+"<u>Производя оплату ключа, вы соглашаетесь со всеми вышеперечисленными "
+"условиями данного раздела.</u><br /> "
+msgstr ""
+
+#: ../elsa-grabber/rs/templates/help_links.php:1
+msgid ""
+"Plugin site &mdash; <a target=_blank href=\"http://savitov.ru/razdel/elsa"
+"\">Elsa grabber</a>   <br />\n"
+"Facebook &mdash; <a target=_blank href=\"http://www.facebook.com/pages/ElSa-"
+"Grabber/245560198797041\">http://www.facebook.com/pages/ElSa-"
+"Grabber/245560198797041</a> <br />\n"
+"Vk &mdash; <a target=_blank href=\"http://vk.com/elsagrabber\">http://vk.com/"
+"elsagrabber</a><br />\n"
+"<div id=\"fb-root\"></div>\n"
+"<script src=\"http://connect.facebook.net/en_US/all.js#xfbml=1\"></script>\n"
+"<fb:like-box href=\"http://www.facebook.com/pages/ElSa-"
+"Grabber/245560198797041\" width=\"400\" show_faces=\"false\"\n"
+"border_color=\"\" stream=\"false\" header=\"true\">\n"
+"</fb:like-box>\n"
+"<br><br>\n"
+"<script type=\"text/javascript\" src=\"https://apis.google.com/js/plusone.js"
+"\"></script>\n"
+"<g:plusone href=\"http://savitov.ru/razdel/elsa\"></g:plusone>"
+msgstr ""
+
+#: ../elsa-grabber/rs/templates/help_settings.php:1
+msgid ""
+"<br/>При изменение параметров, плагин вам подскажет возможные ошибки в "
+"настройках, а так же возможные правильные варианты настроек.\n"
+"\n"
+"\n"
+"          <br/><br/>Всего у плагина есть 8 параметров, которые нужно "
+"установить:<br/>\n"
+"            <b>Домен, на который выдан ключ</b> <br/>\n"
+"              <span class=\"elsagrinner\">Тут нужно указать домен, на "
+"который вы купили ключ <br/>\n"
+"              Отсутствие этого параметра не скажется на работоспособности "
+"плагина, но вы потеряете ряд важных, по-моему мнению, преимуществ.<br/>\n"
+"              Более подробно об этом написано в разделе  <a href=\"#e\">Buy "
+"key</a></span> <br/>\n"
+"\n"
+"            <b>Ключ плагина</b> <br/>\n"
+"              <span class=\"elsagrinner\">Тут нужно указать ключ, который я "
+"вам выслал <br/>\n"
+"              Отсутствие этого параметра не скажется на работоспособности "
+"плагина, но вы потеряете ряд важных, по-моему мнению, преимуществ.<br/>\n"
+"              Более подробно об этом написано в разделе  <a href=\"#e\">Buy "
+"key</a></span> <br/>\n"
+"\n"
+"            <b>Подключать jQuery</b> <br/>\n"
+"              <span class=\"elsagrinner\">Укажите, нужно ли плагину "
+"подключать код jQuery <br/>\n"
+"              Из за отсутствия этого параметра в предыдущих версиях часто "
+"возникали конфликты разных библиотек, т.к. плагин по-умолчанию подключал\n"
+"              jQuery. В результате начинались непонятные проблемы с сайтом. "
+"Сейчас вы сами выбираете подключать или же нет.\n"
+"              Например если у вас установлен какой либо плагин который уже "
+"подключает его то установите этот параметр в \"no\".\n"
+"              <br/>Для работы плагина данная библиотека обязательна!\n"
+"\n"
+"              </span> <br/>\n"
+"\n"
+"\n"
+"            <b>Папка для загрузок</b> <br/>\n"
+"              <span class=\"elsagrinner\">Укажите директорию, доступную для "
+"записи, куда плагин будет сохранять полученные в результате работы файлы. "
+"<br/>\n"
+"              если в данном параметре используется символ \"/\", тогда "
+"директория будет считаться относительно корневой папки сайта. В противном "
+"случае, директория будет искаться относительно директории плагина.\n"
+"\n"
+"              <br/>Этот параметр необходим для работы плагина, его "
+"отсутствие или неправильное значение приведет к невозможности выполнения "
+"заданий.\n"
+"\n"
+"              </span> <br/>\n"
+"\n"
+"\n"
+"            <b>Url к папке с загрузками</b> <br/>\n"
+"              <span class=\"elsagrinner\">Урл к папке для загрузок "
+"относительно сайта.\n"
+"              <br/>Этот параметр необходим для работы плагина, его "
+"отсутствие или неправильное значение приведет к невозможности выполнения "
+"заданий.\n"
+"              </span> <br/>\n"
+"\n"
+"\n"
+"            <b>Куда прописывать ссылки на плагин</b> <br/>\n"
+"              <span class=\"elsagrinner\">Данный параметр управляет "
+"возможность устанавливать ссылки на сайт плагина в постах или в футере "
+"сайта.\n"
+"              <br/> Возможные значения:  <br/>\n"
+"              <ul>\n"
+"                <li><b>none</b> &mdash; ссылки не ставятся</li>\n"
+"                <li><b>post</b> &mdash; ссылки ставятся в каждом посте "
+"добавленным плагином в конец текста поста</li>\n"
+"                <li><b>after post</b> &mdash; ссылки ставятся в каждом посте "
+"докаленным плагином в конец текста поста</li>\n"
+"                <li><b>before post</b> &mdash; ссылки ставятся в каждом "
+"посте добавленным плагином в начало текста поста</li>\n"
+"                <li><b>site footer</b> &mdash; ссылка ставятся в футер "
+"сайта</li>\n"
+"               </ul>\n"
+"              <br />\n"
+"               Если вы используете данный плагин, но не покупаете его "
+"платную версию, пожалуйста, указывайте ссылки на сайт плагина.<br />\n"
+"               Пример ссылки - it is inserted <a href=\"http://savitov.ru/"
+"razdel/elsa/\">ElSa</a>\n"
+"              </span> <br/>\n"
+"\n"
+"\n"
+"            <b>Язык</b> <br/>\n"
+"              <span class=\"elsagrinner\">\n"
+"              Языковые настройки плагина. Сейчас доступны руский и "
+"английский языки</span> <br/>\n"
+"\n"
+"\n"
+"            <b>Set time limit</b> <br/>\n"
+"              <span class=\"elsagrinner\">\n"
+"              Задает время в секундах, в течение которого скрипт должен "
+"завершить работу. Если скрипт не успевает, вызывается фатальная\n"
+"              ошибка. По умолчанию дается 30 секунд, либо время, записанное "
+"в настройке  max_execution_time\n"
+"              в php.ini (если такая настройка установлена). При вызове "
+"set_time_limit() перезапускает счетчик с нуля.\n"
+"              Другими словами, если таймаут изначально был 30 секунд, и "
+"через 25 секунд после запуска скрипта будет вызвана функция\n"
+"              set_time_limit(20), то скрипт будет работать максимум 45 "
+"секунд.\n"
+"              <br/>Если задан ноль, время выполнения неограниченно.\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"              </span> <br/>"
+msgstr ""
+
+#: ../elsa-grabber/rs/templates/_addtask.php:5
+#: ../elsa-grabber/rs/templates/_edittask.php:13
+msgid "Имя"
+msgstr "Name"
+
+#: ../elsa-grabber/rs/templates/_addtask.php:11
+#: ../elsa-grabber/rs/templates/_edittask.php:19
+msgid "Тип"
+msgstr "Type"
+
+#: ../elsa-grabber/rs/templates/_addtask.php:19
+#: ../elsa-grabber/rs/templates/_edittask.php:28
+msgid "Состояние"
+msgstr ""
+
+#: ../elsa-grabber/rs/templates/_addtask.php:29
+#: ../elsa-grabber/rs/templates/_edittask.php:38
+msgid "Описание"
+msgstr ""
+
+#: ../elsa-grabber/rs/templates/_addtask.php:35
+#: ../elsa-grabber/rs/templates/_edittask.php:44
+msgid "Период запуска"
+msgstr ""
+
+#: ../elsa-grabber/rs/templates/_addtask.php:43
+#: ../elsa-grabber/rs/templates/_edittask.php:52
+#: ../elsa-grabber/rs/templates/_testtask.php:53
+msgid "Текст задания"
+msgstr "Export of tasks"
+
+#: ../elsa-grabber/rs/templates/_addtask.php:49
+msgid "Добавить"
+msgstr "Update"
+
+#: ../elsa-grabber/rs/templates/_addtask.php:51
+msgid "Закрыть"
+msgstr ""
+
+#: ../elsa-grabber/rs/templates/_edittask.php:61
+msgid "Разместить в каталоге"
+msgstr ""
+
+#: ../elsa-grabber/rs/templates/_maintext.php:8
+#: ../elsa-grabber/rs/templates/_maintext.php:23
+msgid "О плагине"
+msgstr "Plug-in key"
+
+#: ../elsa-grabber/rs/templates/_maintext.php:9
+#: ../elsa-grabber/rs/templates/_maintext.php:30
+msgid "Лицензия"
+msgstr ""
+
+#: ../elsa-grabber/rs/templates/_maintext.php:10
+#: ../elsa-grabber/rs/templates/_maintext.php:38
+msgid "От разработчика"
+msgstr ""
+
+#: ../elsa-grabber/rs/templates/_maintext.php:11
+#: ../elsa-grabber/rs/templates/_maintext.php:46
+msgid "Справка"
+msgstr ""
+
+#: ../elsa-grabber/rs/templates/_maintext.php:13
+#: ../elsa-grabber/rs/templates/_maintext.php:60
+msgid "О разработчике"
+msgstr ""
+
+#: ../elsa-grabber/rs/templates/_maintext.php:14
+#: ../elsa-grabber/rs/templates/_maintext.php:66
+msgid "Купить ключ"
+msgstr ""
+
+#: ../elsa-grabber/rs/templates/_maintext.php:15
+#: ../elsa-grabber/rs/templates/_maintext.php:72
+msgid "Ответы на вопросы"
+msgstr ""
+
+#: ../elsa-grabber/rs/templates/_maintext.php:16
+#: ../elsa-grabber/rs/templates/_maintext.php:78
+msgid "Ссылки"
+msgstr ""
+
+#: ../elsa-grabber/rs/templates/_remotetask.php:6
+msgid "Введите доменное имя или его часть"
+msgstr ""
+
+#: ../elsa-grabber/rs/templates/_remotetask.php:8
+msgid "Найти задания"
+msgstr "Catalog of tasks"
+
+#: ../elsa-grabber/rs/templates/_testtask.php:49
+msgid "Текст результата"
+msgstr ""
+
+#: ../elsa-grabber/rs/templates/_testtask.php:50
+msgid "Код результата"
+msgstr ""
+
+#: ../elsa-grabber/rs/templates/_testtask.php:51
+msgid "Анализ входящих данных"
+msgstr ""
+
+#: ../elsa-grabber/rs/templates/_testtask.php:52
+msgid "Дамп данных"
+msgstr ""
+
+#: ../elsa-grabber/rs/templates/_testtask.php:69
+#: ../elsa-grabber/rs/templates/_testtask.php:111
+msgid "Проблемы в тексте задания"
+msgstr "Mistake when importing task: "
+
+#: ../elsa-grabber/rs/templates/_testtask.php:76
+#: ../elsa-grabber/rs/templates/_testtask.php:117
+msgid "Возвращен нулевой результат"
+msgstr ""
+
+#: ../elsa-grabber/rs/templates/_testtask.php:163
+#, fuzzy
+msgid "Проблемных директив не выявленно"
+msgstr "Mistake when importing task: "
+
+#: ../elsa-grabber/rs/templates/_upload.php:4
+msgid ""
+"В этом окне вы можете испортировать в базу данных сайта задания которые вы "
+"ранее экспортировали\n"
+"<br />Поддерживается загрузка нескольких файлов, но для этого вам нужно "
+"запаковать их в zip архив\n"
+"<br />Перед началом процедуры импорта убедитесь что директория export внутри "
+"папки плагина доступна для записи <br /><br />"
+msgstr ""
+
+#: ../elsa-grabber/rs/templates/_upload.php:8
+msgid "Выберите файл"
+msgstr ""
